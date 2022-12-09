@@ -30,7 +30,9 @@ import ui.logistics.LogisticsWorkArea;
 
 /**
  *
- * @author rohinibalasubramanian
+
+ * @author balajis
+
  */
 
 public class MainJFrame extends javax.swing.JFrame {

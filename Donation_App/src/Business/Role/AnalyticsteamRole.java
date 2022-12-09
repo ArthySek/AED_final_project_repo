@@ -13,7 +13,9 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author ram.a
+
+ * @author balajis
+
  */
 public class AnalyticsteamRole extends Role {
     

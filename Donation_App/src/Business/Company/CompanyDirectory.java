@@ -7,7 +7,9 @@ package Business.Company;
 
 /**
  *
- * @author ram.a
+
+ * @author balajis
+
  */
 public class CompanyDirectory {
     
