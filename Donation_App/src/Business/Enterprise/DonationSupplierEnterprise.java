@@ -20,6 +20,8 @@ public class DonationSupplierEnterprise extends Enterprise {
     @Override
     public ArrayList<Role> getSupportedRole() {
         return null;
+        
+       
     }
     
 }
