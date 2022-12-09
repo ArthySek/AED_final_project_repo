@@ -12,7 +12,9 @@ import java.util.HashMap;
 
 /**
  *
+
  * @author balajis
+
  */
 public class NGO {
     ArrayList<Company> CompanyofNGo = new ArrayList<Company>();

@@ -13,7 +13,9 @@ import javax.swing.JPanel;
 
 /**
  *
+
  * @author balajis
+
  */
 public class LogisticRole extends Role {
 
