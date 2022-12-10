@@ -14,11 +14,10 @@ import javax.swing.JOptionPane;
 
 /**
  *
-<<<<<<< HEAD
+
  * @author arthy
 =======
- * @author rohinibalasubramanian
->>>>>>> balaji
+ 
  */
 public class UserAccountDirectory {
     ArrayList<UserAccount> userAccountList = new ArrayList<UserAccount>();
