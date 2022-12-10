@@ -24,7 +24,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author sarveshzeke
+ * @author arthy
  */
 public class CompanyRequestPanel extends javax.swing.JPanel {
 
