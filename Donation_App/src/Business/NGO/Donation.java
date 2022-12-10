@@ -11,7 +11,7 @@ import java.util.Date;
 
 /**
  *
- * @author sarveshzeke
+ * @author tanmayshekhar
  */
 public class Donation {
     int donation_no;
