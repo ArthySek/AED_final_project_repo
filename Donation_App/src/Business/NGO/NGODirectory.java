@@ -11,7 +11,9 @@ import java.util.ArrayList;
 
 /**
  *
- * @author ram.a
+
+ * @author balajis
+
  */
 public class NGODirectory {
     ArrayList<NGO> ngolist = new ArrayList<NGO>();
