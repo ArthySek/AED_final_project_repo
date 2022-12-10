@@ -11,11 +11,10 @@ import java.util.HashMap;
 
 /**
  *
-<<<<<<< HEAD
+
  * @author arthy
 =======
- * @author rohinibalasubramanian
->>>>>>> balaji
+
  */
 public class Supplier {
     
