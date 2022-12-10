@@ -16,7 +16,11 @@ import java.util.Map;
 
 /**
  *
+<<<<<<< HEAD
  * @author arthy
+=======
+ * @author rohinibalasubramanian
+>>>>>>> balaji
  */
 public class VolunteerDirectory {
     ArrayList<Volunteer> volunteers;

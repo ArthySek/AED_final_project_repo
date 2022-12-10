@@ -28,7 +28,11 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
+<<<<<<< HEAD
  * @author arthy
+=======
+ * @author sarveshzeke
+>>>>>>> balaji
  */
 public class ManageSchedulePanel extends javax.swing.JPanel {
 

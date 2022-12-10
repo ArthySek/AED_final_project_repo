@@ -48,7 +48,11 @@ import javax.swing.JPanel;
 
 /**
  *
+<<<<<<< HEAD
  * @author sarveshzeke
+=======
+ * @author balajis
+>>>>>>> balaji
  */
 public class RegisterPanel extends javax.swing.JPanel {
 

@@ -13,7 +13,11 @@ import javax.swing.JPanel;
 
 /**
  *
+<<<<<<< HEAD
  * @author ram.a
+=======
+ * @author balajis
+>>>>>>> balaji
  */
 public class SponsorRole extends Role {
     @Override

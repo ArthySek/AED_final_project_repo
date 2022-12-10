@@ -10,7 +10,11 @@ import java.util.ArrayList;
 
 /**
  *
+<<<<<<< HEAD
  * @author tanmayshekhar
+=======
+ * @author sarveshzeke
+>>>>>>> balaji
  */
 public class DonationSupplierEnterprise extends Enterprise {
     
@@ -20,8 +24,11 @@ public class DonationSupplierEnterprise extends Enterprise {
     @Override
     public ArrayList<Role> getSupportedRole() {
         return null;
+<<<<<<< HEAD
         
        
+=======
+>>>>>>> balaji
     }
     
 }

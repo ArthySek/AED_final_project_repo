@@ -25,7 +25,11 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
+<<<<<<< HEAD
  * @author arthy
+=======
+ * @author sarveshzeke
+>>>>>>> balaji
  */
 public class SponsorCompaniesPanel extends javax.swing.JPanel {
 

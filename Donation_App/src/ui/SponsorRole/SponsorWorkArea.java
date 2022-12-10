@@ -15,7 +15,11 @@ import javax.swing.JPanel;
 
 /**
  *
+<<<<<<< HEAD
  * @author arthy
+=======
+ * @author sarveshzeke
+>>>>>>> balaji
  */
 public class SponsorWorkArea extends javax.swing.JPanel {
 

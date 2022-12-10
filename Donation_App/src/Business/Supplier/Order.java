@@ -10,7 +10,11 @@ import java.util.Date;
 
 /**
  *
+<<<<<<< HEAD
  * @author arthy
+=======
+ * @author rohinibalasubramanian
+>>>>>>> balaji
  */
 public class Order {
     int count = 100;
