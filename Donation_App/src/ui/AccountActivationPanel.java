@@ -18,7 +18,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author sarveshzeke
+ * @author balajis
  */
 public class AccountActivationPanel extends javax.swing.JPanel {
 
