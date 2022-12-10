@@ -48,7 +48,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author sarveshzeke
+ * @author balajis
  */
 public class RegisterPanel extends javax.swing.JPanel {
 
