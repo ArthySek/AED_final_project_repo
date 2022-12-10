@@ -17,7 +17,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author sarveshzeke
+ * @author arthy
  */
 public class LocationManagerWorkArea extends javax.swing.JPanel {
 

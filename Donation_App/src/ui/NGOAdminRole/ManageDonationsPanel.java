@@ -21,11 +21,9 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
-<<<<<<< HEAD
+
  * @author arthy
-=======
- * @author sarveshzeke
->>>>>>> balaji
+
  */
 public class ManageDonationsPanel extends javax.swing.JPanel {
 

@@ -32,7 +32,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author sarveshzeke
+ * @author arthy
  */
 public class LocationRequestPanel extends javax.swing.JPanel {
 
