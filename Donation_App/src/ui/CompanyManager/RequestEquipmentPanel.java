@@ -24,7 +24,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author sarveshzeke
+ * @author balajis
  */
 public class RequestEquipmentPanel extends javax.swing.JPanel {
 
