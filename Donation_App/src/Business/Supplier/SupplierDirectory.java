@@ -19,11 +19,10 @@ import java.util.ArrayList;
 
 /**
  *
-<<<<<<< HEAD
+
  * @author arthy
 =======
- * @author chara
->>>>>>> balaji
+
  */
 public class SupplierDirectory {
     ArrayList<Supplier> supplierList = new ArrayList<Supplier>();
