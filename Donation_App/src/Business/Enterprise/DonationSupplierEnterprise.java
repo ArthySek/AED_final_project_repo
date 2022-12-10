@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author sarveshzeke
+ * @author tanmayshekhar
  */
 public class DonationSupplierEnterprise extends Enterprise {
     
@@ -20,6 +20,8 @@ public class DonationSupplierEnterprise extends Enterprise {
     @Override
     public ArrayList<Role> getSupportedRole() {
         return null;
+        
+       
     }
     
 }
