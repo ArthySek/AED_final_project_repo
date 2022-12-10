@@ -15,7 +15,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author sarveshzeke
+ * @author balajis
  */
 public class EquipmentSupplierWorkSpace extends javax.swing.JPanel {
 
