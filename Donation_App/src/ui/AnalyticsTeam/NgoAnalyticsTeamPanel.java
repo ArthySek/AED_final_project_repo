@@ -17,7 +17,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author sarveshzeke
+ * @author balajis
  */
 public class NgoAnalyticsTeamPanel extends javax.swing.JPanel {
 
