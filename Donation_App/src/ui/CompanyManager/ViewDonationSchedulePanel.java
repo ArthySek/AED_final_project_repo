@@ -23,7 +23,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author sarveshzeke
+ * @author balajis
  */
 public class ViewDonationSchedulePanel extends javax.swing.JPanel {
 

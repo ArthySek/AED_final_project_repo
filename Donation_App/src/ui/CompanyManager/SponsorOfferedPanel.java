@@ -22,7 +22,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author sarveshzeke
+ * @author balajis
  */
 public class SponsorOfferedPanel extends javax.swing.JPanel {
 

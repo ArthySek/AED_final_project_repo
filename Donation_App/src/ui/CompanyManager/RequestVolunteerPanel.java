@@ -26,7 +26,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author sarveshzeke
+ * @author balajis
  */
 public class RequestVolunteerPanel extends javax.swing.JPanel {
 
