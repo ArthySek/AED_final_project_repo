@@ -11,14 +11,12 @@ import Business.Organization.Organization;
 import Business.UserAccount.UserAccount;
 import javax.swing.JPanel;
 
+
 /**
  *
-<<<<<<< HEAD
- * @author ram.a
-=======
  * @author balajis
->>>>>>> balaji
  */
+
 public class SponsorRole extends Role {
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, Ecosystem business) {
