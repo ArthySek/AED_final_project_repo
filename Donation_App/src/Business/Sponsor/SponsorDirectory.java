@@ -12,7 +12,7 @@ import java.util.HashMap;
 
 /**
  *
- * @author ram.a
+ * @author balajis
  */
 public class SponsorDirectory {
     ArrayList<Sponsor> sponsorsList = new ArrayList<Sponsor>();
