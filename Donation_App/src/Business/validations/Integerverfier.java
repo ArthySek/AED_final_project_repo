@@ -13,7 +13,7 @@ import javax.swing.JTextField;
 
 /**
  *
- * @author sarveshzeke
+ * @author tanmayshekhar
  */
 public class Integerverfier extends InputVerifier{
    
