@@ -12,9 +12,9 @@ import java.util.ArrayList;
  *
  * @author sarveshzeke
  */
-public class CompanyManagerOrganization extends Organization {
+public class companyManagerOrganization extends Organization {
     
-    public CompanyManagerOrganization()
+    public companyManagerOrganization()
     {
         super(Organization.Type.Admin.getValue());
     }

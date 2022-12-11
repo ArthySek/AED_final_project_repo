@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ui.CompanyManager;
+package ui.companyManager;
 
 import Business.Company.Company;
 import Business.DB4OUtil.DB4OUtil;
@@ -20,10 +20,10 @@ import javax.swing.JPanel;
  *
  * @author sarveshzeke
  */
-public class CompanyManagerWorkArea extends javax.swing.JPanel {
+public class companyManagerWorkArea extends javax.swing.JPanel {
 
     /**
-     * Creates new form CompanyManagerWorkArea
+     * Creates new form companyManagerWorkArea
      */
     DB4OUtil db = DB4OUtil.getInstance();
     JPanel container;
@@ -33,7 +33,7 @@ public class CompanyManagerWorkArea extends javax.swing.JPanel {
     NGODirectory ngodir;
     Volunteer v;
     
-    public CompanyManagerWorkArea(JPanel container,UserAccount ua,Ecosystem ecosystem) {
+    public companyManagerWorkArea(JPanel container,UserAccount ua,Ecosystem ecosystem) {
         initComponents();
         this.container  = container;
         this.ecosystem = ecosystem;

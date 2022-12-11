@@ -26,7 +26,7 @@ public class NGO {
     int noOfDonations;
     ArrayList<Donation> donations;
     boolean donationScheduled;
-    UserAccount userAccount;
+    UserAccount UserAccount;
     String scheduleType ;
     
 //    public int getNoofCompanies()
@@ -37,7 +37,7 @@ public class NGO {
     
     public NGO(String NGOName)
     {
-       // this.userAccount = ua;
+       // this.UserAccount = ua;
         this.NGOName = NGOName;
         this.scheduleType = "Not Selected";
 
@@ -127,7 +127,7 @@ public class NGO {
                 donations.add(donation);
                // schedule[row][0] = String.valueOf(donationNoStatic);
               //  schedule[row][1] = "Day " + (i+1);
-                //schedule[row][1] = "Team "+ CompanyofNGo.get(t1).getCompanyName();
+                //schedule[row][1] = "Team "+ CompanyofNGo.get(t1).getcompanyName();
                 
                 row++;
                 donationNoStatic++;
@@ -178,22 +178,22 @@ public class NGO {
         CompanyofNGo.add(comp);
     }
     
-    public void provideCompanyAccess(String CompanyName)
+    public void provideCompanyAccess(String companyName)
     {
         for(Company t: CompanyofNGo)
         {
-            if(t.getCompanyName().equals(CompanyName))
+            if(t.getcompanyName().equals(companyName))
             {
                 t.setCompanyStatus("Playing");
             }
         }
     }
     
-    public Company getCompany(String CompanyName)
+    public Company getCompany(String companyName)
     {
         for(Company c: CompanyofNGo)
         {
-            if(c.getCompanyName().equals(CompanyName))
+            if(c.getcompanyName().equals(companyName))
                 return c;
         }
         return null;
@@ -216,15 +216,15 @@ public class NGO {
              if(d.getVenue() == null) continue;
              if(d.getVenue().getLocation().equals(Location))
              {
-             if(d.getComp().getCompanyName()== null) continue;
+             if(d.getComp().getcompanyName()== null) continue;
              else
              {
-                if(statistics.containsKey(d.getComp().getCompanyName())) 
+                if(statistics.containsKey(d.getComp().getcompanyName())) 
                 {
-                    statistics.put(d.getComp().getCompanyName(), statistics.get(d.getComp().getCompanyName()) + 1);
+                    statistics.put(d.getComp().getcompanyName(), statistics.get(d.getComp().getcompanyName()) + 1);
                 }
                 else
-                    statistics.put(d.getComp().getCompanyName(),1);
+                    statistics.put(d.getComp().getcompanyName(),1);
              }
              }
          }

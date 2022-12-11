@@ -125,7 +125,7 @@ public class CompanyRequestPanel extends javax.swing.JPanel {
         int selectedRow = compreqtbl.getSelectedRow();
         if(selectedRow == -1) {JOptionPane.showMessageDialog(this, "Select Company to proceed");return;}
         String NGOName = df.getValueAt(selectedRow,0).toString();
-        String CompanyName = df.getValueAt(selectedRow,1).toString();
+        String companyName = df.getValueAt(selectedRow,1).toString();
         String username = df.getValueAt(selectedRow,2).toString();
         UserAccount ua = ud.getUserToGrantAccess(username);
         NGO ngo = ngodir.getNGO(NGOName);
@@ -133,7 +133,7 @@ public class CompanyRequestPanel extends javax.swing.JPanel {
         System.out.println("company manager's passcode"+passcode);
         ua.setPasscode(passcode);
         Utility.SendEmail(username, passcode, ua.getEmail());
-        ngo.provideCompanyAccess(CompanyName);
+        ngo.provideCompanyAccess(companyName);
         populatetable();
     }//GEN-LAST:event_jButton2ActionPerformed
 
@@ -166,7 +166,7 @@ public class CompanyRequestPanel extends javax.swing.JPanel {
             for(Company t: comp)
             {  
                 if(t.getCompanyStatus().equals("Requested")){
-                String[] row = {s.getNGOName(),t.getCompanyName(),t.getUserAccount().getUsername(),t.getUserAccount().getEmail()};
+                String[] row = {s.getNGOName(),t.getcompanyName(),t.getUserAccount().getUsername(),t.getUserAccount().getEmail()};
                 dt.addRow(row);}
             }
         }

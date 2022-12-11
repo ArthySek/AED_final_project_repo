@@ -18,7 +18,7 @@ import javax.swing.ImageIcon;
 import java.util.Date;
 import javax.swing.JOptionPane;
 import ui.AnalyticsTeam.NgoAnalyticsTeamPanel;
-import ui.CompanyManager.CompanyManagerWorkArea;
+import ui.companyManager.companyManagerWorkArea;
 import ui.EquipmentSupplierRole.EquipmentSupplierWorkSpace;
 import ui.LocationManagerRole.LocationManagerWorkArea;
 import ui.NGOAdminRole.AdminWorkArea;
@@ -41,7 +41,7 @@ public class MainJFrame extends javax.swing.JFrame {
      * Creates new form MainJFrame
      */
       Ecosystem ecosystem;
-     UserAccountDirectory useraccountDirectory;
+     UserAccountDirectory UserAccountDirectory;
      UserAccount ua;
     private DB4OUtil dB4OUtil = DB4OUtil.getInstance();
      
@@ -50,11 +50,11 @@ public class MainJFrame extends javax.swing.JFrame {
         initComponents();
       
         ecosystem = dB4OUtil.retrieveSystem();
-       useraccountDirectory = ecosystem.getUserAccountDirectory();
+       UserAccountDirectory = ecosystem.getUserAccountDirectory();
       
           date.setText(" "+String.valueOf(LocalTime.now().getHour()) + ":"+String.valueOf(LocalTime.now().getMinute()));
           //lblHome.setIcon(new ImageIcon(new ImageIcon("src/Business/Util/Icon/Home.png").getImage().getScaledInstance(250, 250, Image.SCALE_DEFAULT)));
-        ArrayList<UserAccount> users = useraccountDirectory.getUserAccountList();
+        ArrayList<UserAccount> users = UserAccountDirectory.getUserAccountList();
         
          for(UserAccount ua: users)
          {
@@ -63,7 +63,7 @@ public class MainJFrame extends javax.swing.JFrame {
                  ua.setEmail("sarvesh28zeke@gmail.com");
              }
          }
-        jLabel4.setIcon(new ImageIcon(new ImageIcon("src/Business/Icon/donations-charity-red-gray-heart-illustration-background-simple-outline-design-clean-73540164_1_520x300.jpeg").getImage().getScaledInstance(520, 300, Image.SCALE_DEFAULT)));
+        jLabel4.setIcon(new ImageIcon(new ImageIcon("src/Business/Icon/My project.jpg").getImage().getScaledInstance(520, 300, Image.SCALE_DEFAULT)));
 
     }
 
@@ -103,70 +103,74 @@ public class MainJFrame extends javax.swing.JFrame {
         MainPanel.setBackground(new java.awt.Color(255, 255, 255));
         MainPanel.setBorder(javax.swing.BorderFactory.createMatteBorder(4, 4, 4, 4, new java.awt.Color(0, 0, 0)));
         MainPanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        MainPanel.add(usernametf, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 380, 290, -1));
+        MainPanel.add(usernametf, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 190, 190, -1));
 
-        jButton1.setBackground(new java.awt.Color(0, 204, 0));
+        jButton1.setBackground(new java.awt.Color(0, 102, 204));
+        jButton1.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Login");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        MainPanel.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 450, 100, 40));
+        MainPanel.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 270, 190, 30));
 
         jButton2.setBackground(new java.awt.Color(255, 153, 0));
+        jButton2.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
+        jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("Register");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);
             }
         });
-        MainPanel.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 450, 100, 40));
+        MainPanel.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 40, 100, 30));
 
-        jLabel1.setFont(new java.awt.Font("Lucida Grande", 3, 14)); // NOI18N
-        jLabel1.setText("Username:");
-        MainPanel.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 380, 80, 20));
+        jLabel1.setFont(new java.awt.Font("Helvetica Neue", 0, 14)); // NOI18N
+        jLabel1.setText("Username");
+        MainPanel.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 190, 80, 20));
 
-        jLabel2.setFont(new java.awt.Font("Lucida Grande", 3, 14)); // NOI18N
-        jLabel2.setText("Password:");
-        MainPanel.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 410, 80, 20));
+        jLabel2.setFont(new java.awt.Font("Helvetica Neue", 0, 14)); // NOI18N
+        jLabel2.setText("Password");
+        MainPanel.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 230, 80, 20));
 
-        jButton3.setForeground(new java.awt.Color(255, 51, 51));
         jButton3.setText("Exit");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
             }
         });
-        MainPanel.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 490, 100, 40));
+        MainPanel.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 310, 190, 30));
 
-        jButton4.setBackground(new java.awt.Color(0, 204, 255));
+        jButton4.setFont(new java.awt.Font("Helvetica Neue", 1, 13)); // NOI18N
+        jButton4.setForeground(new java.awt.Color(255, 153, 0));
         jButton4.setText("Activate");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
             }
         });
-        MainPanel.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 450, -1, 40));
+        MainPanel.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 40, 90, 30));
 
-        jLabel3.setFont(new java.awt.Font("Menlo", 1, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 51, 153));
+        jLabel3.setFont(new java.awt.Font("Helvetica Neue", 0, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 153, 0));
         jLabel3.setText("Your love for the people!");
-        MainPanel.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 340, 200, 30));
+        MainPanel.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 60, 160, 30));
 
         jLabel4.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Business/Icon/donations-charity-red-gray-heart-illustration-background-simple-outline-design-clean-73540164_1_520x300.jpeg"))); // NOI18N
-        MainPanel.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 60, 520, 280));
-        MainPanel.add(passtf1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 410, 290, -1));
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Business/Icon/My project.jpg"))); // NOI18N
+        MainPanel.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 130, 310, 290));
+        MainPanel.add(passtf1, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 230, 190, -1));
 
-        jLabel5.setFont(new java.awt.Font("Monospaced", 3, 36)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 51, 102));
-        jLabel5.setText("CHARITY DONATION SYSTEM ");
-        MainPanel.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 20, 530, -1));
+        jLabel5.setFont(new java.awt.Font("Helvetica Neue", 1, 18)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(0, 102, 255));
+        jLabel5.setText("DONATE - YOUR LOVE IS NEEDED");
+        MainPanel.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 40, 530, -1));
 
-        date.setFont(new java.awt.Font("Lucida Grande", 1, 24)); // NOI18N
+        date.setFont(new java.awt.Font("Helvetica Neue", 0, 14)); // NOI18N
         date.setText("<Date Time>");
-        MainPanel.add(date, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 530, 180, 30));
+        MainPanel.add(date, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 430, 90, 30));
 
         container.add(MainPanel, "card2");
 
@@ -181,9 +185,9 @@ public class MainJFrame extends javax.swing.JFrame {
         String password = passtf1.getText();
        
         
-        if(useraccountDirectory.authenticateUseraccount(username, password))
+        if(UserAccountDirectory.authenticateUserAccount(username, password))
         {
-            this.ua = useraccountDirectory.authenticateUser(username, password);
+            this.ua = UserAccountDirectory.authenticateUser(username, password);
            
         if(ua.getRole().toString().equals("Business.Role.SystemAdminRole"))
         {
@@ -200,9 +204,9 @@ public class MainJFrame extends javax.swing.JFrame {
             crdLyt.show(container,"adminWorkarea");
         }
         
-        if(ua.getRole().toString().equals("Business.Role.CompanyManagerRole"))
+        if(ua.getRole().toString().equals("Business.Role.companyManagerRole"))
         {
-            CompanyManagerWorkArea cm = new CompanyManagerWorkArea(container, ua,ecosystem);
+            companyManagerWorkArea cm = new companyManagerWorkArea(container, ua,ecosystem);
             container.add("companyManager",cm);
             CardLayout crdLyt = (CardLayout) container.getLayout();
             crdLyt.show(container,"companyManager");

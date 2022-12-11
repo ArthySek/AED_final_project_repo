@@ -166,7 +166,7 @@ public class ManageOrdersPanel extends javax.swing.JPanel {
         // TODO add your handling code here:
         Order order = supplierdir.getOrder((String) orderidcmbbx.getSelectedItem());
         equipmenttf.setText(order.getItem());
-        companytf.setText(order.getCompanyName());
+        companytf.setText(order.getcompanyName());
     }//GEN-LAST:event_orderidcmbbxActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
@@ -240,7 +240,7 @@ public class ManageOrdersPanel extends javax.swing.JPanel {
         {
             if(o.getSupplierName().equals(supplier.getSupplierName()))
             {
-            String[] row = {o.getItem(),String.valueOf(o.getQuantity()),o.getCompanyName(),o.getStatus(),o.getReview(),
+            String[] row = {o.getItem(),String.valueOf(o.getQuantity()),o.getcompanyName(),o.getStatus(),o.getReview(),
                o.getLogistics()
             ,o.getLocaldatetime().toString(),String.valueOf(o.getOrderId())};
             df.addRow(row);

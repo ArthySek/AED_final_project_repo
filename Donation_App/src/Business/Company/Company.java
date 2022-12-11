@@ -18,38 +18,38 @@ import java.util.ArrayList;
 
  */
 public class Company {
-    public String CompanyName;
-    String CompanyManager;
-    UserAccount userAccount;
+    public String companyName;
+    String companyManager;
+    UserAccount UserAccount;
     NGO ngo;
     String CompanyStatus;
 
-    public String getCompanyName() {
-        return CompanyName;
+    public String getcompanyName() {
+        return companyName;
     }
     
-    public Company(UserAccount ua,String CompanyName)
+    public Company(UserAccount ua,String companyName)
     {
-        this.userAccount = ua;
-        this.CompanyName = CompanyName;
+        this.UserAccount = ua;
+        this.companyName = companyName;
         this.CompanyStatus = "Requested";
        
     }
 
-    public String getCompanyManager() {
-        return CompanyManager;
+    public String getcompanyManager() {
+        return companyManager;
     }
 
-    public void setCompanyManager(String CompanyManager) {
-        this.CompanyManager = CompanyManager;
+    public void setcompanyManager(String companyManager) {
+        this.companyManager = companyManager;
     }
 
     public UserAccount getUserAccount() {
-        return userAccount;
+        return UserAccount;
     }
 
-    public void setUserAccount(UserAccount userAccount) {
-        this.userAccount = userAccount;
+    public void setUserAccount(UserAccount UserAccount) {
+        this.UserAccount = UserAccount;
     }
 
     public String getCompanyStatus() {
@@ -70,8 +70,8 @@ public class Company {
         this.budget = budget;
     }
 
-    public void setCompanyName(String CompanyName) {
-        this.CompanyName = CompanyName;
+    public void setcompanyName(String companyName) {
+        this.companyName = companyName;
     }
 
 //    public ArrayList<Player> getTeamPlayers() {
@@ -82,9 +82,9 @@ public class Company {
 //        this.teamPlayers = teamPlayers;
 //    }
 //    public ArrayList<Player> teamPlayers = new ArrayList<Player>();
-//    public Company(String CompanyName)
+//    public Company(String companyName)
 //    {
-//        this.CompanyName = CompanyName;
+//        this.companyName = companyName;
 //    }
 //    
 //    public void addPlayer(Player player)

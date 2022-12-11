@@ -26,14 +26,14 @@ public class AdminWorkArea extends javax.swing.JPanel {
      */
     JPanel container;
     Ecosystem ecosystem;
-    UserAccount userAccount;
+    UserAccount UserAccount;
     DB4OUtil db = DB4OUtil.getInstance();
     
     public AdminWorkArea(JPanel container, UserAccount ua,Ecosystem ecosystem) {
         initComponents();
         this.ecosystem = ecosystem;
         this.container = container;
-        this.userAccount = ua;
+        this.UserAccount = ua;
         jButton4.setIcon(new ImageIcon(new ImageIcon("src/Business/Icon/back.jpeg").getImage().getScaledInstance(100, 50, Image.SCALE_DEFAULT)));
         jLabel1.setIcon(new ImageIcon(new ImageIcon("src/Business/Icon/admin.jpeg").getImage().getScaledInstance(708, 487, Image.SCALE_DEFAULT)));
     }

@@ -32,7 +32,7 @@ public abstract class Role {
      //   DataAnalyst("Data Analyst Role"),
         Supplier("Equipment Supplier Role"),
         Sponsor("Sponsor Role"),
-        CompanyManager("Company Manager Role"),
+        companyManager("Company Manager Role"),
         VenueManager("Venue Manager Role"),
         LogisticRole("Logistic Manager Role"),
         DataAnalystRole("Data Analyst Role");

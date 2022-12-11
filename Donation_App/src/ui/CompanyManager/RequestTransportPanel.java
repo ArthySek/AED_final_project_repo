@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ui.CompanyManager;
+package ui.companyManager;
 
 import Business.Company.Company;
 import Business.Delivery.Delivery;
@@ -205,7 +205,7 @@ public class RequestTransportPanel extends javax.swing.JPanel {
         
         String transportName = df.getValueAt(selectedRow,0).toString();
         Delivery d = supplierdir.getTravelTransport(transportName);
-        Request request = new Request(company.getCompanyName(), transportName);
+        Request request = new Request(company.getcompanyName(), transportName);
         request.setLocation(destinationtf.getText());
         request.setDate(datetf.getDate());
         request.setTravelAmount(Integer.parseInt(budgettf.getText()));

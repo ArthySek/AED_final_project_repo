@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ui.CompanyManager;
+package ui.companyManager;
 
 import Business.Company.Company;
 import Business.Ecosystem;
@@ -132,7 +132,7 @@ public class RequestEquipmentPanel extends javax.swing.JPanel {
         if(selectedRow == -1) {JOptionPane.showMessageDialog(this, "Select a value and proceed");return;}
         String item = df.getValueAt(selectedRow,0).toString();
         String supplier = df.getValueAt(selectedRow,1).toString();
-        Order order = new Order(item,  Integer.parseInt(count.getValue().toString()),supplier,company.getCompanyName());
+        Order order = new Order(item,  Integer.parseInt(count.getValue().toString()),supplier,company.getcompanyName());
         order.setLocaldatetime(LocalDateTime.now());
  
        if(supplierdir.getOrders() == null) supplierdir.setOrders(new ArrayList<Order>());

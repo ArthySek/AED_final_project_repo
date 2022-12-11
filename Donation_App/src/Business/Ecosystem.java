@@ -20,21 +20,21 @@ import java.util.ArrayList;
 public class Ecosystem extends Organization {
     
     EmployeeDirectory employeeDirectory;
-    UserAccountDirectory userAccountDirectory;
+    UserAccountDirectory UserAccountDirectory;
     EnterpriseDirectory enterpriseDirectory;
 
-    public Ecosystem(EmployeeDirectory employeeDirectory, UserAccountDirectory userAccountDirectory, EnterpriseDirectory enterpriseDirectory) 
+    public Ecosystem(EmployeeDirectory employeeDirectory, UserAccountDirectory UserAccountDirectory, EnterpriseDirectory enterpriseDirectory) 
     {
         super();
         this.employeeDirectory = employeeDirectory;
-        this.userAccountDirectory = userAccountDirectory;
+        this.UserAccountDirectory = UserAccountDirectory;
         this.enterpriseDirectory = enterpriseDirectory;
     }
 
-    public Ecosystem(EmployeeDirectory employeeDirectory, UserAccountDirectory userAccountDirectory, EnterpriseDirectory enterpriseDirectory, String name) {
+    public Ecosystem(EmployeeDirectory employeeDirectory, UserAccountDirectory UserAccountDirectory, EnterpriseDirectory enterpriseDirectory, String name) {
         super(name);
         this.employeeDirectory = employeeDirectory;
-        this.userAccountDirectory = userAccountDirectory;
+        this.UserAccountDirectory = UserAccountDirectory;
         this.enterpriseDirectory = enterpriseDirectory;
     }
 
@@ -55,11 +55,11 @@ public class Ecosystem extends Organization {
     }
 
     public UserAccountDirectory getUserAccountDirectory() {
-        return userAccountDirectory;
+        return UserAccountDirectory;
     }
 
-    public void setUserAccountDirectory(UserAccountDirectory userAccountDirectory) {
-        this.userAccountDirectory = userAccountDirectory;
+    public void setUserAccountDirectory(UserAccountDirectory UserAccountDirectory) {
+        this.UserAccountDirectory = UserAccountDirectory;
     }
     private static Ecosystem business;
     public static Ecosystem getInstance(){

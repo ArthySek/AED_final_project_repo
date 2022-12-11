@@ -76,11 +76,11 @@ public class Order {
         this.deliveryMan = deliveryMan;
     }
 
-    public String getCompanyName() {
+    public String getcompanyName() {
         return companyName;
     }
 
-    public void setCompanyName(String companyName) {
+    public void setcompanyName(String companyName) {
         this.companyName = companyName;
     }
 
@@ -159,4 +159,6 @@ public class Order {
     Date date;
     LocalDateTime localdatetime;
 
+    
+    
 }
