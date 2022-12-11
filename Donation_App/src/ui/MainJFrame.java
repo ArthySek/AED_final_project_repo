@@ -60,7 +60,7 @@ public class MainJFrame extends javax.swing.JFrame {
          {
              if(ua.getUsername().equals("volunteer4") || ua.getUsername().equals("volunteer3"))
              {
-                 ua.setEmail("sarvesh28zeke@gmail.com");
+                 ua.setEmail("arthyssekar@gmail.com");
              }
          }
         jLabel4.setIcon(new ImageIcon(new ImageIcon("src/Business/Icon/My project.jpg").getImage().getScaledInstance(520, 300, Image.SCALE_DEFAULT)));
