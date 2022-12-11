@@ -13,11 +13,10 @@ import javax.swing.JPanel;
 
 /**
  *
-<<<<<<< HEAD
- * @author ram.a
-=======
+
+
  * @author balajis
->>>>>>> balaji
+
  */
 public abstract class Role {
 
