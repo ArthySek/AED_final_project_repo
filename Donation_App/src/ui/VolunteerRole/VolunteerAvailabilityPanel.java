@@ -25,7 +25,7 @@ import ui.companyManager.RequestVolunteerPanel;
 
 /**
  *
- * @author sarveshzeke
+ * @author tanmayshekhar
  */
 public class VolunteerAvailabilityPanel extends javax.swing.JPanel {
 
@@ -61,7 +61,6 @@ public class VolunteerAvailabilityPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        datetf = new com.toedter.calendar.JDateChooser();
         jButton1 = new javax.swing.JButton();
         timecmbbx = new javax.swing.JComboBox<>();
         jButton2 = new javax.swing.JButton();
@@ -75,7 +74,6 @@ public class VolunteerAvailabilityPanel extends javax.swing.JPanel {
         setBorder(javax.swing.BorderFactory.createMatteBorder(3, 3, 3, 3, new java.awt.Color(0, 0, 0)));
         setPreferredSize(new java.awt.Dimension(700, 600));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        add(datetf, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 90, 170, -1));
 
         jButton1.setText("Get Time Slots");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -188,7 +186,6 @@ public class VolunteerAvailabilityPanel extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private com.toedter.calendar.JDateChooser datetf;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;

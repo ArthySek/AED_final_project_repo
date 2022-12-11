@@ -79,7 +79,6 @@ public class ManageSchedulePanel extends javax.swing.JPanel {
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jButton3 = new javax.swing.JButton();
-        datetf = new com.toedter.calendar.JDateChooser();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
@@ -168,7 +167,6 @@ public class ManageSchedulePanel extends javax.swing.JPanel {
             }
         });
         add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 530, 100, 50));
-        add(datetf, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 240, 150, -1));
 
         jLabel5.setFont(new java.awt.Font("Lucida Grande", 3, 36)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(153, 51, 255));
@@ -248,7 +246,6 @@ public class ManageSchedulePanel extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private com.toedter.calendar.JDateChooser datetf;
     private javax.swing.JComboBox<String> donationnocmbbx;
     private javax.swing.JTextField donationtf;
     private javax.swing.JButton jButton1;

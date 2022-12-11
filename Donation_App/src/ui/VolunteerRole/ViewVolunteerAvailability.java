@@ -21,7 +21,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author sarveshzeke
+ * @author tanmayshekhar
  */
 public class ViewVolunteerAvailability extends javax.swing.JPanel {
 
