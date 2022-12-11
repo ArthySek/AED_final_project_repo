@@ -17,7 +17,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author sarveshzeke
+ * @author tanmayshekhar
  */
 public class LogisticsWorkArea extends javax.swing.JPanel {
 
