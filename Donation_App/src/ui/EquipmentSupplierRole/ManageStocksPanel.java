@@ -18,7 +18,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author sarveshzeke
+ * @author balajis
  */
 public class ManageStocksPanel extends javax.swing.JPanel {
 
