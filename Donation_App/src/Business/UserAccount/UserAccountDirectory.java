@@ -20,7 +20,7 @@ import javax.swing.JOptionPane;
  
  */
 public class UserAccountDirectory {
-    ArrayList<UserAccount> userAccountList = new ArrayList<UserAccount>();
+    ArrayList<UserAccount> UserAccountList = new ArrayList<UserAccount>();
 
     ArrayList<UserAccount> accountAccessRequests = new ArrayList<UserAccount>();
 
@@ -32,23 +32,23 @@ public class UserAccountDirectory {
     }
     
     public UserAccountDirectory() {
-        userAccountList = new ArrayList();
+        UserAccountList = new ArrayList();
     }
 
     public ArrayList<UserAccount> getUserAccountList() {
-        return userAccountList;
+        return UserAccountList;
     }
     
     public UserAccount authenticateUser(String username, String password){
-        for (UserAccount ua : userAccountList)
+        for (UserAccount ua : UserAccountList)
             if (ua.getUsername().equals(username) && ua.getPassword().equals(password)){
                 return ua;
             }
         return null;
     }
     
-    public boolean authenticateUseraccount(String username, String password){
-        for (UserAccount ua : userAccountList)
+    public boolean authenticateUserAccount(String username, String password){
+        for (UserAccount ua : UserAccountList)
         {
             if(ua.getUsername().equals(username) && ua.getPassword() == null) 
             {
@@ -62,33 +62,33 @@ public class UserAccountDirectory {
     }
     
     public UserAccount createUserAccount(String username, String password, Employee employee, Role role){
-        UserAccount userAccount = new UserAccount();
-        userAccount.setUsername(username);
-        userAccount.setPassword(password);
-        userAccount.setEmployee(employee);
-        userAccount.setRole(role);
-        userAccountList.add(userAccount);
-        return userAccount;
+        UserAccount UserAccount = new UserAccount();
+        UserAccount.setUsername(username);
+        UserAccount.setPassword(password);
+        UserAccount.setEmployee(employee);
+        UserAccount.setRole(role);
+        UserAccountList.add(UserAccount);
+        return UserAccount;
     }
     
     
-       public UserAccount accessUseraccountRequest(String username, Employee employee, Role role){
-        UserAccount userAccount = new UserAccount();
-        userAccount.setUsername(username);
-       // userAccount.setPassword(password);
-        userAccount.setEmployee(employee);
-        userAccount.setRole(role);
-        if(userAccountList == null) setAccountAccessRequests(new ArrayList<UserAccount>());
-        userAccountList.add(userAccount);
-        return userAccount;
+       public UserAccount accessUserAccountRequest(String username, Employee employee, Role role){
+        UserAccount UserAccount = new UserAccount();
+        UserAccount.setUsername(username);
+       // UserAccount.setPassword(password);
+        UserAccount.setEmployee(employee);
+        UserAccount.setRole(role);
+        if(UserAccountList == null) setAccountAccessRequests(new ArrayList<UserAccount>());
+        UserAccountList.add(UserAccount);
+        return UserAccount;
     }
        
        
        public UserAccount addAdminAccess(String username, Employee employee)
       
        {
-           UserAccount userAccount = new UserAccount();
-           for(UserAccount ua : userAccountList)
+           UserAccount UserAccount = new UserAccount();
+           for(UserAccount ua : UserAccountList)
            {
                if(ua.getRole().toString().equals("Business.Role.Admin"))
                {
@@ -99,17 +99,17 @@ public class UserAccountDirectory {
                    return ua;
                }
            }   
-            userAccount.setUsername(username);
-            userAccount.setEmployee(employee);
-            userAccount.setRole(new AdminRole());
-            userAccountList.add(userAccount);       
-           return userAccount;
+            UserAccount.setUsername(username);
+            UserAccount.setEmployee(employee);
+            UserAccount.setRole(new AdminRole());
+            UserAccountList.add(UserAccount);       
+           return UserAccount;
        }
        
        
        public void provideAccess(String userName)
        {
-           for(UserAccount u : userAccountList)
+           for(UserAccount u : UserAccountList)
            {
                if(u.getUsername().equals(userName))
                {
@@ -121,7 +121,7 @@ public class UserAccountDirectory {
        
     
     public boolean checkIfUsernameIsUnique(String username){
-        for (UserAccount ua : userAccountList){
+        for (UserAccount ua : UserAccountList){
             if (ua.getUsername().equals(username))
                 return false;
         }
@@ -129,7 +129,7 @@ public class UserAccountDirectory {
     }
     
     public UserAccount getUserToGrantAccess(String username){
-        for (UserAccount ua : userAccountList){
+        for (UserAccount ua : UserAccountList){
             if (ua.getUsername().equals(username))
                 return ua;
         }

@@ -206,7 +206,7 @@ public class ManageSchedulePanel extends javax.swing.JPanel {
         String ngoName = (String) ngocmbbx.getSelectedItem();
         String donationNo = String.valueOf(donationnocmbbx.getSelectedItem());
         Donation donation = ngodir.getDonation(donationNo,ngoName);
-        String company1 = donation.getComp().getCompanyName();
+        String company1 = donation.getComp().getcompanyName();
        
         donationtf.setText(company1);
         System.out.println(company1);
@@ -302,7 +302,7 @@ public class ManageSchedulePanel extends javax.swing.JPanel {
                date = datef.format(m.getDate());
            }
            
-            String[] row = {String.valueOf(m.getDonation_no()),m.getComp().getCompanyName(),venname,date,schedulestat};
+            String[] row = {String.valueOf(m.getDonation_no()),m.getComp().getcompanyName(),venname,date,schedulestat};
             df.addRow(row);
         }
         scheduletbl.setModel(df);

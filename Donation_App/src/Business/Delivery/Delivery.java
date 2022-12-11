@@ -16,7 +16,7 @@ import java.util.HashMap;
  */
 public class Delivery {
     String transportName;
-    UserAccount userAccount;
+    UserAccount UserAccount;
     String transportType;
     int cost;
 
@@ -58,17 +58,17 @@ public class Delivery {
     }
 
     public UserAccount getUserAccount() {
-        return userAccount;
+        return UserAccount;
     }
 
-    public void setUserAccount(UserAccount userAccount) {
-        this.userAccount = userAccount;
+    public void setUserAccount(UserAccount UserAccount) {
+        this.UserAccount = UserAccount;
     }
     
-    public Delivery(UserAccount userAccount, String transportName){
+    public Delivery(UserAccount UserAccount, String transportName){
         
         this.transportName=transportName;
-        this.userAccount=userAccount;
+        this.UserAccount=UserAccount;
         transportTypes = new HashMap<String,Integer>();
     }
     

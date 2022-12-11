@@ -157,7 +157,7 @@ public class ManageUsersPanel extends javax.swing.JPanel {
         
         for(UserAccount ua : accessUsersList)
         {
-            if(ua.getUsername().equals("sysadmin") || ua.getRole().toString().equals("Business.Role.CompanyManagerRole")) continue;
+            if(ua.getUsername().equals("sysadmin") || ua.getRole().toString().equals("Business.Role.companyManagerRole")) continue;
             if(ua.getAccountStatus().equals("Access requested"))
             {
             String[] row = {ua.getEmployee().getName(),ua.getUsername(),ua.getEmail(),ua.getRole().getClass().toString()};

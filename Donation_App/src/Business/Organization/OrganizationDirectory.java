@@ -57,7 +57,7 @@ public class OrganizationDirectory {
         
         
         else if (type.getValue().equals(Organization.Type.Admin.getValue())){
-            organization = new CompanyManagerOrganization();
+            organization = new companyManagerOrganization();
             organizationList.add(organization);
         }
         

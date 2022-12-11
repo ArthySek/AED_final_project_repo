@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ui.CompanyManager;
+package ui.companyManager;
 
 import Business.Company.Company;
 import Business.Ecosystem;
@@ -132,7 +132,7 @@ public class ViewDonationSchedulePanel extends javax.swing.JPanel {
             else venue = m.getVenue().getVenueName();
             if(m.getDate() == null) date= "Not Selected";
             else date = datef.format(m.getDate());
-                String[] row = {m.getComp().getCompanyName(),venue,date,m.getVenueStatus()};
+                String[] row = {m.getComp().getcompanyName(),venue,date,m.getVenueStatus()};
                 df.addRow(row);
             }
         

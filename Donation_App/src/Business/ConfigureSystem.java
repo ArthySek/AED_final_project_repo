@@ -40,14 +40,14 @@ public class ConfigureSystem {
         
         /*Sysadmin*/
         Employee employee = employeeDirectory.createEmployee("sysadmin");
-        UserAccountDirectory userAccountDirectory = system.getUserAccountDirectory();
-        if(userAccountDirectory == null)
+        UserAccountDirectory UserAccountDirectory = system.getUserAccountDirectory();
+        if(UserAccountDirectory == null)
         {
-            userAccountDirectory = new UserAccountDirectory();
+            UserAccountDirectory = new UserAccountDirectory();
         }
-        UserAccount ua = userAccountDirectory.createUserAccount("sysadmin", "sysadmin", employee, new SystemAdminRole());
+        UserAccount ua = UserAccountDirectory.createUserAccount("sysadmin", "sysadmin", employee, new SystemAdminRole());
         system.setEmployeeDirectory(employeeDirectory);
-        system.setUserAccountDirectory(userAccountDirectory);
+        system.setUserAccountDirectory(UserAccountDirectory);
         
         /*NGOEnterprise*/
 

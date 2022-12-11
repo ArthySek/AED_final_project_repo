@@ -14,7 +14,7 @@ import Business.Logistics.Logistic;
 import Business.NGO.NGO;
 import Business.NGO.NGODirectory;
 import Business.Role.AnalyticsteamRole;
-import Business.Role.CompanyManagerRole;
+import Business.Role.companyManagerRole;
 import Business.Role.LogisticRole;
 import Business.Role.Role;
 import Business.Role.SponsorRole;
@@ -451,7 +451,7 @@ public class RegisterPanel extends javax.swing.JPanel {
                if(roleSelect.equals("Volunteer"))
                 {
                    role = new VolunteerRole();
-                   ua = ud.accessUseraccountRequest(usernametf.getText(), employee, role);
+                   ua = ud.accessUserAccountRequest(usernametf.getText(), employee, role);
                    ua.setEmail(emailtf.getText());
                    Volunteer volunteer=null;
                    try {
@@ -465,7 +465,7 @@ public class RegisterPanel extends javax.swing.JPanel {
                if(roleSelect.equals("Venue Manager"))
                 {
                    role = new VenueManagerRole();
-                   ua = ud.accessUseraccountRequest(usernametf.getText(), employee, role);
+                   ua = ud.accessUserAccountRequest(usernametf.getText(), employee, role);
                    ua.setEmail(emailtf.getText());
                    Venue venue = new Venue(ua,venuenametf.getText(),citytf.getText());
                    vendir.addVenue(venue);
@@ -474,7 +474,7 @@ public class RegisterPanel extends javax.swing.JPanel {
                if(roleSelect.equals("Sponsor"))
                 {
                    role = new SponsorRole();
-                   ua = ud.accessUseraccountRequest(usernametf.getText(), employee, role);
+                   ua = ud.accessUserAccountRequest(usernametf.getText(), employee, role);
                    ua.setEmail(emailtf.getText());
                    Sponsor sponsor = new Sponsor(ua,sponsuptf.getText());
                    sponsorD.addSponsor(sponsor);
@@ -486,12 +486,12 @@ public class RegisterPanel extends javax.swing.JPanel {
                 }
                 if(roleSelect.equals("Company Manager"))
                 {
-                   role = new CompanyManagerRole();
-                   ua = ud.accessUseraccountRequest(usernametf.getText(), employee, role);
+                   role = new companyManagerRole();
+                   ua = ud.accessUserAccountRequest(usernametf.getText(), employee, role);
                    ua.setEmail(emailtf.getText());
                    NGO ngo = ngodir.getNGO((String) ngocmbbx.getSelectedItem());
                    Company comp = new Company(ua, companytf.getText());
-                   comp.setCompanyManager(employee.getName());
+                   comp.setcompanyManager(employee.getName());
                    
                    ngo.addCompanyRequest(comp);
                 }
@@ -501,7 +501,7 @@ public class RegisterPanel extends javax.swing.JPanel {
                 if(roleSelect.equals("Supplier"))
                 {
                    role = new SupplierRole();
-                   ua = ud.accessUseraccountRequest(usernametf.getText(), employee, role);
+                   ua = ud.accessUserAccountRequest(usernametf.getText(), employee, role);
                    ua.setEmail(emailtf.getText());
                    Supplier supplier = new Supplier(ua, sponsuptf.getText());
                    supplierdir.addSupplier(supplier);
@@ -510,7 +510,7 @@ public class RegisterPanel extends javax.swing.JPanel {
                 if(roleSelect.equals("Analyst admin"))
                 {
                    role = new AnalyticsteamRole();
-                   ua = ud.accessUseraccountRequest(usernametf.getText(), employee, role);
+                   ua = ud.accessUserAccountRequest(usernametf.getText(), employee, role);
                    ua.setEmail(emailtf.getText());
                 }
                 
@@ -519,7 +519,7 @@ public class RegisterPanel extends javax.swing.JPanel {
                     if(((String) logisticscmbbx.getSelectedItem()).equals("Care Package"))
                     {
                    role = new LogisticRole();
-                   ua = ud.accessUseraccountRequest(usernametf.getText(), employee, role);
+                   ua = ud.accessUserAccountRequest(usernametf.getText(), employee, role);
                    ua.setEmail(emailtf.getText());
                    Logistic logistic = new Logistic(ua, logisticscompanytf.getText(), nametf.getText());
                    supplierdir.addLogist(logistic);
@@ -527,7 +527,7 @@ public class RegisterPanel extends javax.swing.JPanel {
                     else
                     {
                        role = new TravelRole();
-                   ua = ud.accessUseraccountRequest(usernametf.getText(), employee, role);
+                   ua = ud.accessUserAccountRequest(usernametf.getText(), employee, role);
                    ua.setEmail(emailtf.getText());
                    Delivery dv = new Delivery(ua, logisticscompanytf.getText());
                    supplierdir.addTravelTransport(dv);

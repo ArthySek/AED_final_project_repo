@@ -220,7 +220,7 @@ public class LocationRequestPanel extends javax.swing.JPanel {
                date = datef.format(venueRequests.get(m));
                
                
-            String[] row = {m.getNgo(),m.getComp().getCompanyName(),String.valueOf(m.getDonation_no()),date,m.getVenueStatus()};
+            String[] row = {m.getNgo(),m.getComp().getcompanyName(),String.valueOf(m.getDonation_no()),date,m.getVenueStatus()};
              df.addRow(row);
             }
             }
