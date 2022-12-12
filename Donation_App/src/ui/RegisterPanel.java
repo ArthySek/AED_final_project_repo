@@ -145,7 +145,7 @@ public class RegisterPanel extends javax.swing.JPanel {
         jButton1 = new javax.swing.JButton();
         jLabel18 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(255, 102, 102));
+        setBackground(new java.awt.Color(255, 204, 204));
         setBorder(javax.swing.BorderFactory.createMatteBorder(3, 3, 3, 3, new java.awt.Color(0, 0, 0)));
         setSize(new java.awt.Dimension(760, 680));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());

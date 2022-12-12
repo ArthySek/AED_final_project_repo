@@ -61,7 +61,7 @@ public class AccountActivationPanel extends javax.swing.JPanel {
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(255, 153, 0));
+        setBackground(new java.awt.Color(255, 255, 204));
         setBorder(javax.swing.BorderFactory.createMatteBorder(3, 3, 3, 3, new java.awt.Color(0, 0, 0)));
         setMinimumSize(new java.awt.Dimension(700, 600));
         setPreferredSize(new java.awt.Dimension(700, 600));
