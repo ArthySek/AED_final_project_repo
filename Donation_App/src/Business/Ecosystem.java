@@ -83,6 +83,8 @@ public class Ecosystem extends Organization {
     public boolean checkuserunique(String username){
         
         return true;
+        
+        
     }
     
     
