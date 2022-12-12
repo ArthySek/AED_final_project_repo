@@ -62,7 +62,7 @@ public class ManageOrderRequests extends javax.swing.JPanel {
         btnback = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(255, 102, 102));
+        setBackground(new java.awt.Color(51, 153, 255));
         setBorder(javax.swing.BorderFactory.createMatteBorder(3, 3, 3, 3, new java.awt.Color(0, 0, 0)));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -101,7 +101,6 @@ public class ManageOrderRequests extends javax.swing.JPanel {
         add(btnback, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 440, 100, 50));
 
         jLabel1.setFont(new java.awt.Font("Lucida Grande", 3, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 204));
         jLabel1.setText("MANAGE ORDER REQUESTS");
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(241, 33, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
