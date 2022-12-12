@@ -69,7 +69,7 @@ public class ManageOrders extends javax.swing.JPanel {
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(0, 153, 51));
+        setBackground(new java.awt.Color(0, 102, 204));
         setBorder(javax.swing.BorderFactory.createMatteBorder(3, 3, 3, 3, new java.awt.Color(0, 0, 0)));
 
         btnupdate.setText("Update");
