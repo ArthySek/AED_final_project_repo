@@ -184,7 +184,7 @@ public class ManageDonationsPanel extends javax.swing.JPanel {
                date = datef.format(m.getDate());
            }
            
-            String[] row = {String.valueOf(m.getDonation_no()),m.getComp().getcompanyName(),venname,date};
+            String[] row = {String.valueOf(m.getDonation_no()),m.getComp().getCompanyName(),venname,date};
             df.addRow(row);
         }
         scheduletblnew.setModel(df);
@@ -245,7 +245,7 @@ public class ManageDonationsPanel extends javax.swing.JPanel {
             if(date == null) date = "Not Selected";
             
             System.out.println("one step before populating");
-             String[] row = {String.valueOf(m.getDonation_no()),m.getComp().getcompanyName(),venue,date};
+             String[] row = {String.valueOf(m.getDonation_no()),m.getComp().getCompanyName(),venue,date};
              df.addRow(row);
 
             

@@ -153,11 +153,11 @@ public class SupplierDirectory {
         return null;
     }
     
-        public Request getRequest(String companyName,String transName,String destination)
+        public Request getRequest(String CompanyName,String transName,String destination)
     {
         for(Request r: travelRequests)
         {
-            if(r.getTravelTeam().equals(companyName) && r.getTravelTransport().equals(transName) && r.getLocation().equals(destination))
+            if(r.getTravelTeam().equals(CompanyName) && r.getTravelTransport().equals(transName) && r.getLocation().equals(destination))
                 return r;
         }
         return null;

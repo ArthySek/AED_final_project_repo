@@ -21,7 +21,7 @@ import javax.swing.DefaultComboBoxModel;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-import ui.companyManager.RequestVolunteerPanel;
+import ui.CompanyManager.RequestVolunteerPanel;
 
 /**
  *

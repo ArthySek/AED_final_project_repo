@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ui.companyManager;
+package ui.CompanyManager;
 
 import Business.Company.Company;
 import Business.Delivery.Delivery;
@@ -201,7 +201,7 @@ public class RequestTransportPanel extends javax.swing.JPanel {
         
         String transportName = df.getValueAt(selectedRow,0).toString();
         Delivery d = supplierdir.getTravelTransport(transportName);
-        Request request = new Request(company.getcompanyName(), transportName);
+        Request request = new Request(company.getCompanyName(), transportName);
         request.setLocation(destinationtf.getText());
         request.setDate(datetf.getDate());
         request.setTravelAmount(Integer.parseInt(budgettf.getText()));
@@ -215,7 +215,7 @@ public class RequestTransportPanel extends javax.swing.JPanel {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
         CardLayout crdLyt = (CardLayout) container.getLayout();
-        crdLyt.show(container,"companyManager");
+        crdLyt.show(container,"CompanyManager");
     }//GEN-LAST:event_jButton2ActionPerformed
 
 

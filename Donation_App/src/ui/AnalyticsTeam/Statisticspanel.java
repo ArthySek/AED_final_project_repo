@@ -142,7 +142,7 @@ public class Statisticspanel extends javax.swing.JPanel {
         
 //        for(Company c: companies)
 //        {
-//            dx.addElement(c.getcompanyName());
+//            dx.addElement(c.getCompanyName());
 //        }
 //        cmbTeams.setModel(dx);
 //        cmbTeam2.setModel(dx);

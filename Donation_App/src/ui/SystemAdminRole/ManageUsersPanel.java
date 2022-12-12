@@ -7,7 +7,7 @@ package ui.SystemAdminRole;
 
 import Business.Ecosystem;
 import Business.UserAccount.UserAccount;
-import Business.UserAccount.useraccountDirectory;
+import Business.UserAccount.userAccountDirectory;
 import Business.Util.Utility;
 import java.awt.CardLayout;
 
@@ -30,7 +30,7 @@ public class ManageUsersPanel extends javax.swing.JPanel {
      */
     JPanel container;
     Ecosystem ecosystem;
-    useraccountDirectory ud;
+    userAccountDirectory ud;
     UserAccount users;
     
     public ManageUsersPanel(JPanel container,Ecosystem ecosystem) {
@@ -38,7 +38,7 @@ public class ManageUsersPanel extends javax.swing.JPanel {
         initComponents();
         this.ecosystem = ecosystem;
         this.container = container;
-        ud = ecosystem.getuseraccountDirectory();
+        ud = ecosystem.getuserAccountDirectory();
         populatetable();
 
         jLabel4.setIcon(new ImageIcon(new ImageIcon("src/Business/Icon/background.jpeg").getImage().getScaledInstance(2609, 1600, Image.SCALE_DEFAULT)));
@@ -157,7 +157,7 @@ public class ManageUsersPanel extends javax.swing.JPanel {
         
         for(UserAccount ua : accessUsersList)
         {
-            if(ua.getUsername().equals("sysadmin") || ua.getRole().toString().equals("Business.Role.companyManagerRole")) continue;
+            if(ua.getUsername().equals("sysadmin") || ua.getRole().toString().equals("Business.Role.CompanyManagerRole")) continue;
             if(ua.getAccountStatus().equals("Access requested"))
             {
             String[] row = {ua.getEmployee().getName(),ua.getUsername(),ua.getEmail(),ua.getRole().getClass().toString()};

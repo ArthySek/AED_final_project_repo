@@ -53,14 +53,14 @@ public class SponsorDirectory {
         
     }
        
-    public void addCompanyToSponsored(String  companyName,String sponsorName)
+    public void addCompanyToSponsored(String  CompanyName,String sponsorName)
     {
         
         for(Sponsor s: sponsorsList)
         {
             if(s.getSponsorName().equals(sponsorName))
             {
-                s.getSponsoredCompanies().add(companyName);
+                s.getSponsoredCompanies().add(CompanyName);
             }
         }
     }

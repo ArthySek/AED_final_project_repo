@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ui.companyManager;
+package ui.CompanyManager;
 
 import Business.Company.Company;
 import Business.Ecosystem;
@@ -143,7 +143,7 @@ public class SponsorOfferedPanel extends javax.swing.JPanel {
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
         CardLayout crdLyt = (CardLayout) container.getLayout();
-        crdLyt.show(container,"companyManager");
+        crdLyt.show(container,"CompanyManager");
     }//GEN-LAST:event_jButton3ActionPerformed
 
 

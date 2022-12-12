@@ -14,7 +14,7 @@ import Business.Logistics.Logistic;
 import Business.NGO.NGO;
 import Business.NGO.NGODirectory;
 import Business.Role.AnalyticsteamRole;
-import Business.Role.companyManagerRole;
+import Business.Role.CompanyManagerRole;
 import Business.Role.LogisticRole;
 import Business.Role.Role;
 import Business.Role.SponsorRole;
@@ -27,7 +27,7 @@ import Business.Sponsor.SponsorDirectory;
 import Business.Supplier.Supplier;
 import Business.Supplier.SupplierDirectory;
 import Business.UserAccount.UserAccount;
-import Business.UserAccount.useraccountDirectory;
+import Business.UserAccount.userAccountDirectory;
 import Business.Venue.Venue;
 import Business.Venue.VenueDirectory;
 import Business.Volunteer.Volunteer;
@@ -418,7 +418,7 @@ public class RegisterPanel extends javax.swing.JPanel {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        useraccountDirectory ud = ecosystem.getuseraccountDirectory();
+        userAccountDirectory ud = ecosystem.getuserAccountDirectory();
         Role role;
         String roleSelect = (String) rolecmbbx.getSelectedItem();
         VolunteerDirectory vd = ecosystem.getEnterpriseDirectory().getVolunteerDirectory();
@@ -486,12 +486,12 @@ public class RegisterPanel extends javax.swing.JPanel {
                 }
                 if(roleSelect.equals("Company Manager"))
                 {
-                   role = new companyManagerRole();
+                   role = new CompanyManagerRole();
                    ua = ud.accessUserAccountRequest(usernametf.getText(), employee, role);
                    ua.setEmail(emailtf.getText());
                    NGO ngo = ngodir.getNGO((String) ngocmbbx.getSelectedItem());
                    Company comp = new Company(ua, companytf.getText());
-                   comp.setcompanyManager(employee.getName());
+                   comp.setCompanyManager(employee.getName());
                    
                    ngo.addCompanyRequest(comp);
                 }

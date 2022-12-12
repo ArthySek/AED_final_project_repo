@@ -28,14 +28,14 @@ public class NGODirectory {
     
     
 
-    public boolean checkcompanyNameUnique(String companyName)
+    public boolean checkCompanyNameUnique(String CompanyName)
     {
         for(NGO s: ngolist)
         {
             ArrayList<Company> comp = s.getCompanyofNGo();
             for(Company t: comp)
             {
-                if(t.getcompanyName().equals(companyName))
+                if(t.getCompanyName().equals(CompanyName))
                     return true;
             }
         }
@@ -84,7 +84,7 @@ public class NGODirectory {
             ArrayList<Company> comp = s.getCompanyofNGo();
             for(Company t: comp)
             {
-                if(t.getcompanyName().equals(compName))
+                if(t.getCompanyName().equals(compName))
                     return s;
             }
             }
@@ -143,7 +143,7 @@ public class NGODirectory {
             ArrayList<Company> companies = n.getCompanyofNGo();
             for(Company c: companies)
             {
-                if(c.getcompanyName().equals(compName))
+                if(c.getCompanyName().equals(compName))
                     return c;
             }
             }

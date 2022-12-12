@@ -206,7 +206,7 @@ public class ManageOrders extends javax.swing.JPanel {
         // TODO add your handling code here:
         Order order = supplierdir.getOrder((String) cmbOrders.getSelectedItem());
         equiptf.setText(order.getItem());
-        comptf.setText(order.getcompanyName());
+        comptf.setText(order.getCompanyName());
     }//GEN-LAST:event_cmbOrdersActionPerformed
 
     private void btnupdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnupdateActionPerformed
@@ -227,7 +227,7 @@ public class ManageOrders extends javax.swing.JPanel {
             if(o.getLogistics().equals(logistic.getLogisticCompany())){
                 if(o.getStatus().equals("Ordered")) {continue;}
                 else{
-            String[] row = {String.valueOf(o.getOrderId()),o.getSupplierName(),o.getcompanyName(),o.getStatus(),String.valueOf(o.getLocaldatetime())};
+            String[] row = {String.valueOf(o.getOrderId()),o.getSupplierName(),o.getCompanyName(),o.getStatus(),String.valueOf(o.getLocaldatetime())};
             df.addRow(row);}}
         }
         

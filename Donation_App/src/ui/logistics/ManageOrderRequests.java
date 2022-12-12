@@ -125,7 +125,7 @@ private void populateTable() {
             if(o.getLogistics().equals(logistic.getLogisticCompany())){
                 if(o.getStatus().equals("Order Accepted")){
                 
-            String[] row = {String.valueOf(o.getOrderId()),o.getItem(),o.getSupplierName(),o.getcompanyName(),o.getStatus(),String.valueOf(o.getLocaldatetime())};
+            String[] row = {String.valueOf(o.getOrderId()),o.getItem(),o.getSupplierName(),o.getCompanyName(),o.getStatus(),String.valueOf(o.getLocaldatetime())};
             df.addRow(row);}}
         }
         

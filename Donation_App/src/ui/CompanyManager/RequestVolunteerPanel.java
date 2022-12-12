@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ui.companyManager;
+package ui.CompanyManager;
 
 import Business.Company.Company;
 import Business.Ecosystem;
@@ -135,7 +135,7 @@ public class RequestVolunteerPanel extends javax.swing.JPanel {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
         CardLayout crdLyt = (CardLayout) container.getLayout();
-        crdLyt.show(container,"companyManager");
+        crdLyt.show(container,"CompanyManager");
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed

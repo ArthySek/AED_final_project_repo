@@ -141,10 +141,10 @@ public class TransportBooking extends javax.swing.JPanel {
          DefaultTableModel df = (DefaultTableModel) tblViewBooking.getModel();
         int selectedRow = tblViewBooking.getSelectedRow();
         if(selectedRow == -1) {JOptionPane.showMessageDialog(this, "Select request and proceed");return;}
-        String companyName = df.getValueAt(selectedRow,0).toString();
+        String CompanyName = df.getValueAt(selectedRow,0).toString();
         String destination = df.getValueAt(selectedRow,1).toString();
         
-        Request r = supplierdir.getRequest(companyName, d.getTransportName(), destination);
+        Request r = supplierdir.getRequest(CompanyName, d.getTransportName(), destination);
         r.setStatus("Accepted");
         populateTable();
     }//GEN-LAST:event_btnacceptActionPerformed
@@ -154,10 +154,10 @@ public class TransportBooking extends javax.swing.JPanel {
         DefaultTableModel df = (DefaultTableModel) tblViewBooking.getModel();
         int selectedRow = tblViewBooking.getSelectedRow();
         if(selectedRow == -1) {JOptionPane.showMessageDialog(this, "Select request and proceed");return;}
-        String companyName = df.getValueAt(selectedRow,0).toString();
+        String CompanyName = df.getValueAt(selectedRow,0).toString();
         String destination = df.getValueAt(selectedRow,1).toString();
         
-        Request r = supplierdir.getRequest(companyName, d.getTransportName(), destination);
+        Request r = supplierdir.getRequest(CompanyName, d.getTransportName(), destination);
         r.setStatus("Declined");
         populateTable();
     }//GEN-LAST:event_btnrejectActionPerformed

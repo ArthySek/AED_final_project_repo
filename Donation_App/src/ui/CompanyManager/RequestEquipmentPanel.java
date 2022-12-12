@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ui.companyManager;
+package ui.CompanyManager;
 
 import Business.Company.Company;
 import Business.Ecosystem;
@@ -132,7 +132,7 @@ public class RequestEquipmentPanel extends javax.swing.JPanel {
         if(selectedRow == -1) {JOptionPane.showMessageDialog(this, "Select a value and proceed");return;}
         String item = df.getValueAt(selectedRow,0).toString();
         String supplier = df.getValueAt(selectedRow,1).toString();
-        Order order = new Order(item,  Integer.parseInt(count.getValue().toString()),supplier,company.getcompanyName());
+        Order order = new Order(item,  Integer.parseInt(count.getValue().toString()),supplier,company.getCompanyName());
         order.setLocaldatetime(LocalDateTime.now());
  
        if(supplierdir.getOrders() == null) supplierdir.setOrders(new ArrayList<Order>());
@@ -143,7 +143,7 @@ public class RequestEquipmentPanel extends javax.swing.JPanel {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
         CardLayout crdLyt = (CardLayout) container.getLayout();
-        crdLyt.show(container,"companyManager");
+        crdLyt.show(container,"CompanyManager");
     }//GEN-LAST:event_jButton2ActionPerformed
 
 

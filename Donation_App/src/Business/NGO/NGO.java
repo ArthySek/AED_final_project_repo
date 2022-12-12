@@ -127,7 +127,7 @@ public class NGO {
                 donations.add(donation);
                // schedule[row][0] = String.valueOf(donationNoStatic);
               //  schedule[row][1] = "Day " + (i+1);
-                //schedule[row][1] = "Team "+ CompanyofNGo.get(t1).getcompanyName();
+                //schedule[row][1] = "Team "+ CompanyofNGo.get(t1).getCompanyName();
                 
                 row++;
                 donationNoStatic++;
@@ -178,22 +178,22 @@ public class NGO {
         CompanyofNGo.add(comp);
     }
     
-    public void provideCompanyAccess(String companyName)
+    public void provideCompanyAccess(String CompanyName)
     {
         for(Company t: CompanyofNGo)
         {
-            if(t.getcompanyName().equals(companyName))
+            if(t.getCompanyName().equals(CompanyName))
             {
                 t.setCompanyStatus("Playing");
             }
         }
     }
     
-    public Company getCompany(String companyName)
+    public Company getCompany(String CompanyName)
     {
         for(Company c: CompanyofNGo)
         {
-            if(c.getcompanyName().equals(companyName))
+            if(c.getCompanyName().equals(CompanyName))
                 return c;
         }
         return null;
@@ -216,15 +216,15 @@ public class NGO {
              if(d.getVenue() == null) continue;
              if(d.getVenue().getLocation().equals(Location))
              {
-             if(d.getComp().getcompanyName()== null) continue;
+             if(d.getComp().getCompanyName()== null) continue;
              else
              {
-                if(statistics.containsKey(d.getComp().getcompanyName())) 
+                if(statistics.containsKey(d.getComp().getCompanyName())) 
                 {
-                    statistics.put(d.getComp().getcompanyName(), statistics.get(d.getComp().getcompanyName()) + 1);
+                    statistics.put(d.getComp().getCompanyName(), statistics.get(d.getComp().getCompanyName()) + 1);
                 }
                 else
-                    statistics.put(d.getComp().getcompanyName(),1);
+                    statistics.put(d.getComp().getCompanyName(),1);
              }
              }
          }

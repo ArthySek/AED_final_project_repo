@@ -76,12 +76,12 @@ public class Order {
         this.deliveryMan = deliveryMan;
     }
 
-    public String getcompanyName() {
-        return companyName;
+    public String getCompanyName() {
+        return CompanyName;
     }
 
-    public void setcompanyName(String companyName) {
-        this.companyName = companyName;
+    public void setCompanyName(String CompanyName) {
+        this.CompanyName = CompanyName;
     }
 
     
@@ -118,7 +118,7 @@ public class Order {
     public void setLocation(String location) {
         this.location = location;
     }
-    public Order(String item,int quantity,String supplierName,String companyName)
+    public Order(String item,int quantity,String supplierName,String CompanyName)
     {
         this.orderId = count;
         count++;
@@ -126,7 +126,7 @@ public class Order {
         this.quantity = quantity;
         this.status = "Ordered";
         this.supplierName = supplierName;
-        this.companyName = companyName;
+        this.CompanyName = CompanyName;
         this.logistics = "TBD";
         this.review = "";
         this.location = "";
@@ -136,7 +136,7 @@ public class Order {
     String item;
     int quantity;
     String deliveryMan;
-    String companyName;
+    String CompanyName;
     String status;
     String review;
     String logistics;

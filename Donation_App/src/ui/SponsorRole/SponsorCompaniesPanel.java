@@ -160,7 +160,7 @@ public class SponsorCompaniesPanel extends javax.swing.JPanel {
 //        });
         for(Company c: companies)
         {
-            String[] row = {c.getcompanyName(),String.valueOf(c.getDonationsdone()),String.valueOf(c.getBudget())};
+            String[] row = {c.getCompanyName(),String.valueOf(c.getDonationsdone()),String.valueOf(c.getBudget())};
             df.addRow(row);
         }
         sponsortbl.setModel(df);

@@ -18,30 +18,30 @@ import java.util.ArrayList;
 
  */
 public class Company {
-    public String companyName;
-    String companyManager;
+    public String CompanyName;
+    String CompanyManager;
     UserAccount UserAccount;
     NGO ngo;
     String CompanyStatus;
 
-    public String getcompanyName() {
-        return companyName;
+    public String getCompanyName() {
+        return CompanyName;
     }
     
-    public Company(UserAccount ua,String companyName)
+    public Company(UserAccount ua,String CompanyName)
     {
         this.UserAccount = ua;
-        this.companyName = companyName;
+        this.CompanyName = CompanyName;
         this.CompanyStatus = "Requested";
        
     }
 
-    public String getcompanyManager() {
-        return companyManager;
+    public String getCompanyManager() {
+        return CompanyManager;
     }
 
-    public void setcompanyManager(String companyManager) {
-        this.companyManager = companyManager;
+    public void setCompanyManager(String CompanyManager) {
+        this.CompanyManager = CompanyManager;
     }
 
     public UserAccount getUserAccount() {
@@ -70,8 +70,8 @@ public class Company {
         this.budget = budget;
     }
 
-    public void setcompanyName(String companyName) {
-        this.companyName = companyName;
+    public void setCompanyName(String CompanyName) {
+        this.CompanyName = CompanyName;
     }
 
 //    public ArrayList<Player> getTeamPlayers() {
@@ -82,9 +82,9 @@ public class Company {
 //        this.teamPlayers = teamPlayers;
 //    }
 //    public ArrayList<Player> teamPlayers = new ArrayList<Player>();
-//    public Company(String companyName)
+//    public Company(String CompanyName)
 //    {
-//        this.companyName = companyName;
+//        this.CompanyName = CompanyName;
 //    }
 //    
 //    public void addPlayer(Player player)
@@ -122,5 +122,7 @@ public class Company {
     {
       this.budget = this.budget + budget;
     }
+    
+    
     
 }

@@ -8,7 +8,7 @@ package ui;
 import Business.DB4OUtil.DB4OUtil;
 import Business.Ecosystem;
 import Business.UserAccount.UserAccount;
-import Business.UserAccount.useraccountDirectory;
+import Business.UserAccount.userAccountDirectory;
 import java.awt.CardLayout;
 import java.awt.Image;
 import static java.lang.System.exit;
@@ -18,7 +18,7 @@ import javax.swing.ImageIcon;
 import java.util.Date;
 import javax.swing.JOptionPane;
 import ui.AnalyticsTeam.NgoAnalyticsTeamPanel;
-import ui.companyManager.companyManagerWorkArea;
+import ui.CompanyManager.CompanyManagerWorkArea;
 import ui.EquipmentSupplierRole.EquipmentSupplierWorkSpace;
 import ui.LocationManagerRole.LocationManagerWorkArea;
 import ui.NGOAdminRole.AdminWorkArea;
@@ -41,7 +41,7 @@ public class MainJFrame extends javax.swing.JFrame {
      * Creates new form MainJFrame
      */
       Ecosystem ecosystem;
-     useraccountDirectory useraccountDirectory;
+     userAccountDirectory userAccountDirectory;
      UserAccount ua;
     private DB4OUtil dB4OUtil = DB4OUtil.getInstance();
      
@@ -50,11 +50,11 @@ public class MainJFrame extends javax.swing.JFrame {
         initComponents();
       
         ecosystem = dB4OUtil.retrieveSystem();
-       useraccountDirectory = ecosystem.getuseraccountDirectory();
+       userAccountDirectory = ecosystem.getuserAccountDirectory();
       
           date.setText(" "+String.valueOf(LocalTime.now().getHour()) + ":"+String.valueOf(LocalTime.now().getMinute()));
           //lblHome.setIcon(new ImageIcon(new ImageIcon("src/Business/Util/Icon/Home.png").getImage().getScaledInstance(250, 250, Image.SCALE_DEFAULT)));
-        ArrayList<UserAccount> users = useraccountDirectory.getUserAccountList();
+        ArrayList<UserAccount> users = userAccountDirectory.getUserAccountList();
         
          for(UserAccount ua: users)
          {
@@ -185,9 +185,9 @@ public class MainJFrame extends javax.swing.JFrame {
         String password = passtf1.getText();
        
         
-        if(useraccountDirectory.authenticateUserAccount(username, password))
+        if(userAccountDirectory.authenticateUserAccount(username, password))
         {
-            this.ua = useraccountDirectory.authenticateUser(username, password);
+            this.ua = userAccountDirectory.authenticateUser(username, password);
            
         if(ua.getRole().toString().equals("Business.Role.SystemAdminRole"))
         {
@@ -204,12 +204,12 @@ public class MainJFrame extends javax.swing.JFrame {
             crdLyt.show(container,"adminWorkarea");
         }
         
-        if(ua.getRole().toString().equals("Business.Role.companyManagerRole"))
+        if(ua.getRole().toString().equals("Business.Role.CompanyManagerRole"))
         {
-            companyManagerWorkArea cm = new companyManagerWorkArea(container, ua,ecosystem);
-            container.add("companyManager",cm);
+            CompanyManagerWorkArea cm = new CompanyManagerWorkArea(container, ua,ecosystem);
+            container.add("CompanyManager",cm);
             CardLayout crdLyt = (CardLayout) container.getLayout();
-            crdLyt.show(container,"companyManager");
+            crdLyt.show(container,"CompanyManager");
         }
         
         if(ua.getRole().toString().equals("Business.Role.VenueManagerRole"))

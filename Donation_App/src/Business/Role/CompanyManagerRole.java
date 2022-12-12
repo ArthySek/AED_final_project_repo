@@ -17,7 +17,7 @@ import javax.swing.JPanel;
  * @author balajis
 
  */
-public class companyManagerRole extends Role{
+public class CompanyManagerRole extends Role{
     @Override
     public JPanel createWorkArea(JPanel userProcessContainer, UserAccount account, Organization organization, Enterprise enterprise, Ecosystem business) {
         throw new UnsupportedOperationException("Not supported yet.");

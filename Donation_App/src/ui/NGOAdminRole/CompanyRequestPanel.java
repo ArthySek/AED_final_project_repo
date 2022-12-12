@@ -11,7 +11,7 @@ import Business.Ecosystem;
 import Business.NGO.NGO;
 import Business.NGO.NGODirectory;
 import Business.UserAccount.UserAccount;
-import Business.UserAccount.useraccountDirectory;
+import Business.UserAccount.userAccountDirectory;
 import Business.Util.Utility;
 import java.awt.CardLayout;
 import java.awt.Image;
@@ -37,7 +37,7 @@ public class CompanyRequestPanel extends javax.swing.JPanel {
     JPanel container;
     Ecosystem ecosystem;
     NGODirectory ngodir;
-    useraccountDirectory ud;
+    userAccountDirectory ud;
     DB4OUtil db = DB4OUtil.getInstance();
     
     public CompanyRequestPanel(JPanel container, Ecosystem ecosystem) {
@@ -46,7 +46,7 @@ public class CompanyRequestPanel extends javax.swing.JPanel {
         this.ecosystem = ecosystem;
         ngodir  = ecosystem.getEnterpriseDirectory().getNGODirectory();
         //date.setText(" "+String.valueOf(LocalTime.now().getHour()) + ":"+String.valueOf(LocalTime.now().getMinute()));
-        ud = ecosystem.getuseraccountDirectory();
+        ud = ecosystem.getuserAccountDirectory();
         populatetable();
         jLabel1.setIcon(new ImageIcon(new ImageIcon("src/Business/Icon/comp.png").getImage().getScaledInstance(512, 540, Image.SCALE_DEFAULT)));
         jButton1.setIcon(new ImageIcon(new ImageIcon("src/Business/Icon/back.png").getImage().getScaledInstance(100, 50, Image.SCALE_DEFAULT)));
@@ -125,7 +125,7 @@ public class CompanyRequestPanel extends javax.swing.JPanel {
         int selectedRow = compreqtbl.getSelectedRow();
         if(selectedRow == -1) {JOptionPane.showMessageDialog(this, "Select Company to proceed");return;}
         String NGOName = df.getValueAt(selectedRow,0).toString();
-        String companyName = df.getValueAt(selectedRow,1).toString();
+        String CompanyName = df.getValueAt(selectedRow,1).toString();
         String username = df.getValueAt(selectedRow,2).toString();
         UserAccount ua = ud.getUserToGrantAccess(username);
         NGO ngo = ngodir.getNGO(NGOName);
@@ -133,7 +133,7 @@ public class CompanyRequestPanel extends javax.swing.JPanel {
         System.out.println("company manager's passcode"+passcode);
         ua.setPasscode(passcode);
         Utility.SendEmail(username, passcode, ua.getEmail());
-        ngo.provideCompanyAccess(companyName);
+        ngo.provideCompanyAccess(CompanyName);
         populatetable();
     }//GEN-LAST:event_jButton2ActionPerformed
 
@@ -166,7 +166,7 @@ public class CompanyRequestPanel extends javax.swing.JPanel {
             for(Company t: comp)
             {  
                 if(t.getCompanyStatus().equals("Requested")){
-                String[] row = {s.getNGOName(),t.getcompanyName(),t.getUserAccount().getUsername(),t.getUserAccount().getEmail()};
+                String[] row = {s.getNGOName(),t.getCompanyName(),t.getUserAccount().getUsername(),t.getUserAccount().getEmail()};
                 dt.addRow(row);}
             }
         }
