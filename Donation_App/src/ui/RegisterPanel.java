@@ -27,7 +27,7 @@ import Business.Sponsor.SponsorDirectory;
 import Business.Supplier.Supplier;
 import Business.Supplier.SupplierDirectory;
 import Business.UserAccount.UserAccount;
-import Business.UserAccount.UserAccountDirectory;
+import Business.UserAccount.useraccountDirectory;
 import Business.Venue.Venue;
 import Business.Venue.VenueDirectory;
 import Business.Volunteer.Volunteer;
@@ -418,7 +418,7 @@ public class RegisterPanel extends javax.swing.JPanel {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
-        UserAccountDirectory ud = ecosystem.getUserAccountDirectory();
+        useraccountDirectory ud = ecosystem.getuseraccountDirectory();
         Role role;
         String roleSelect = (String) rolecmbbx.getSelectedItem();
         VolunteerDirectory vd = ecosystem.getEnterpriseDirectory().getVolunteerDirectory();

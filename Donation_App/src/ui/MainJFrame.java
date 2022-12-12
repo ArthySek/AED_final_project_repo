@@ -8,7 +8,7 @@ package ui;
 import Business.DB4OUtil.DB4OUtil;
 import Business.Ecosystem;
 import Business.UserAccount.UserAccount;
-import Business.UserAccount.UserAccountDirectory;
+import Business.UserAccount.useraccountDirectory;
 import java.awt.CardLayout;
 import java.awt.Image;
 import static java.lang.System.exit;
@@ -41,7 +41,7 @@ public class MainJFrame extends javax.swing.JFrame {
      * Creates new form MainJFrame
      */
       Ecosystem ecosystem;
-     UserAccountDirectory UserAccountDirectory;
+     useraccountDirectory useraccountDirectory;
      UserAccount ua;
     private DB4OUtil dB4OUtil = DB4OUtil.getInstance();
      
@@ -50,11 +50,11 @@ public class MainJFrame extends javax.swing.JFrame {
         initComponents();
       
         ecosystem = dB4OUtil.retrieveSystem();
-       UserAccountDirectory = ecosystem.getUserAccountDirectory();
+       useraccountDirectory = ecosystem.getuseraccountDirectory();
       
           date.setText(" "+String.valueOf(LocalTime.now().getHour()) + ":"+String.valueOf(LocalTime.now().getMinute()));
           //lblHome.setIcon(new ImageIcon(new ImageIcon("src/Business/Util/Icon/Home.png").getImage().getScaledInstance(250, 250, Image.SCALE_DEFAULT)));
-        ArrayList<UserAccount> users = UserAccountDirectory.getUserAccountList();
+        ArrayList<UserAccount> users = useraccountDirectory.getUserAccountList();
         
          for(UserAccount ua: users)
          {
@@ -185,9 +185,9 @@ public class MainJFrame extends javax.swing.JFrame {
         String password = passtf1.getText();
        
         
-        if(UserAccountDirectory.authenticateUserAccount(username, password))
+        if(useraccountDirectory.authenticateUserAccount(username, password))
         {
-            this.ua = UserAccountDirectory.authenticateUser(username, password);
+            this.ua = useraccountDirectory.authenticateUser(username, password);
            
         if(ua.getRole().toString().equals("Business.Role.SystemAdminRole"))
         {

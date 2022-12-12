@@ -14,7 +14,7 @@ import Business.Organization.OrganizationDirectory;
 import Business.Role.Role;
 import Business.Role.SystemAdminRole;
 import Business.UserAccount.UserAccount;
-import Business.UserAccount.UserAccountDirectory;
+import Business.UserAccount.useraccountDirectory;
 
 /**
  *
@@ -40,14 +40,14 @@ public class ConfigureSystem {
         
         /*Sysadmin*/
         Employee employee = employeeDirectory.createEmployee("sysadmin");
-        UserAccountDirectory UserAccountDirectory = system.getUserAccountDirectory();
-        if(UserAccountDirectory == null)
+        useraccountDirectory useraccountDirectory = system.getuseraccountDirectory();
+        if(useraccountDirectory == null)
         {
-            UserAccountDirectory = new UserAccountDirectory();
+            useraccountDirectory = new useraccountDirectory();
         }
-        UserAccount ua = UserAccountDirectory.createUserAccount("sysadmin", "sysadmin", employee, new SystemAdminRole());
+        UserAccount ua = useraccountDirectory.createUserAccount("sysadmin", "sysadmin", employee, new SystemAdminRole());
         system.setEmployeeDirectory(employeeDirectory);
-        system.setUserAccountDirectory(UserAccountDirectory);
+        system.setuseraccountDirectory(useraccountDirectory);
         
         /*NGOEnterprise*/
 

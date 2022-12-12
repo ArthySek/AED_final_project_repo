@@ -7,7 +7,7 @@ package ui.SystemAdminRole;
 
 import Business.Ecosystem;
 import Business.UserAccount.UserAccount;
-import Business.UserAccount.UserAccountDirectory;
+import Business.UserAccount.useraccountDirectory;
 import Business.Util.Utility;
 import java.awt.CardLayout;
 
@@ -30,7 +30,7 @@ public class ManageUsersPanel extends javax.swing.JPanel {
      */
     JPanel container;
     Ecosystem ecosystem;
-    UserAccountDirectory ud;
+    useraccountDirectory ud;
     UserAccount users;
     
     public ManageUsersPanel(JPanel container,Ecosystem ecosystem) {
@@ -38,7 +38,7 @@ public class ManageUsersPanel extends javax.swing.JPanel {
         initComponents();
         this.ecosystem = ecosystem;
         this.container = container;
-        ud = ecosystem.getUserAccountDirectory();
+        ud = ecosystem.getuseraccountDirectory();
         populatetable();
 
         jLabel4.setIcon(new ImageIcon(new ImageIcon("src/Business/Icon/background.jpeg").getImage().getScaledInstance(2609, 1600, Image.SCALE_DEFAULT)));

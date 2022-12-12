@@ -19,7 +19,7 @@ import javax.swing.JOptionPane;
 =======
  
  */
-public class UserAccountDirectory {
+public class useraccountDirectory {
     ArrayList<UserAccount> UserAccountList = new ArrayList<UserAccount>();
 
     ArrayList<UserAccount> accountAccessRequests = new ArrayList<UserAccount>();
@@ -31,7 +31,7 @@ public class UserAccountDirectory {
         this.accountAccessRequests = accountAccessRequests;
     }
     
-    public UserAccountDirectory() {
+    public useraccountDirectory() {
         UserAccountList = new ArrayList();
     }
 

@@ -11,7 +11,7 @@ import Business.Ecosystem;
 import Business.NGO.NGO;
 import Business.NGO.NGODirectory;
 import Business.UserAccount.UserAccount;
-import Business.UserAccount.UserAccountDirectory;
+import Business.UserAccount.useraccountDirectory;
 import Business.Util.Utility;
 import java.awt.CardLayout;
 import java.awt.Image;
@@ -37,7 +37,7 @@ public class CompanyRequestPanel extends javax.swing.JPanel {
     JPanel container;
     Ecosystem ecosystem;
     NGODirectory ngodir;
-    UserAccountDirectory ud;
+    useraccountDirectory ud;
     DB4OUtil db = DB4OUtil.getInstance();
     
     public CompanyRequestPanel(JPanel container, Ecosystem ecosystem) {
@@ -46,7 +46,7 @@ public class CompanyRequestPanel extends javax.swing.JPanel {
         this.ecosystem = ecosystem;
         ngodir  = ecosystem.getEnterpriseDirectory().getNGODirectory();
         //date.setText(" "+String.valueOf(LocalTime.now().getHour()) + ":"+String.valueOf(LocalTime.now().getMinute()));
-        ud = ecosystem.getUserAccountDirectory();
+        ud = ecosystem.getuseraccountDirectory();
         populatetable();
         jLabel1.setIcon(new ImageIcon(new ImageIcon("src/Business/Icon/comp.png").getImage().getScaledInstance(512, 540, Image.SCALE_DEFAULT)));
         jButton1.setIcon(new ImageIcon(new ImageIcon("src/Business/Icon/back.png").getImage().getScaledInstance(100, 50, Image.SCALE_DEFAULT)));

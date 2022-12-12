@@ -10,7 +10,7 @@ import Business.Enterprise.EnterpriseDirectory;
 import Business.Organization.Organization;
 import Business.Role.Role;
 import Business.Role.SystemAdminRole;
-import Business.UserAccount.UserAccountDirectory;
+import Business.UserAccount.useraccountDirectory;
 import java.util.ArrayList;
 
 /**
@@ -20,21 +20,21 @@ import java.util.ArrayList;
 public class Ecosystem extends Organization {
     
     EmployeeDirectory employeeDirectory;
-    UserAccountDirectory UserAccountDirectory;
+    useraccountDirectory useraccountDirectory;
     EnterpriseDirectory enterpriseDirectory;
 
-    public Ecosystem(EmployeeDirectory employeeDirectory, UserAccountDirectory UserAccountDirectory, EnterpriseDirectory enterpriseDirectory) 
+    public Ecosystem(EmployeeDirectory employeeDirectory, useraccountDirectory useraccountDirectory, EnterpriseDirectory enterpriseDirectory) 
     {
         super();
         this.employeeDirectory = employeeDirectory;
-        this.UserAccountDirectory = UserAccountDirectory;
+        this.useraccountDirectory = useraccountDirectory;
         this.enterpriseDirectory = enterpriseDirectory;
     }
 
-    public Ecosystem(EmployeeDirectory employeeDirectory, UserAccountDirectory UserAccountDirectory, EnterpriseDirectory enterpriseDirectory, String name) {
+    public Ecosystem(EmployeeDirectory employeeDirectory, useraccountDirectory useraccountDirectory, EnterpriseDirectory enterpriseDirectory, String name) {
         super(name);
         this.employeeDirectory = employeeDirectory;
-        this.UserAccountDirectory = UserAccountDirectory;
+        this.useraccountDirectory = useraccountDirectory;
         this.enterpriseDirectory = enterpriseDirectory;
     }
 
@@ -54,12 +54,12 @@ public class Ecosystem extends Organization {
         this.employeeDirectory = employeeDirectory;
     }
 
-    public UserAccountDirectory getUserAccountDirectory() {
-        return UserAccountDirectory;
+    public useraccountDirectory getuseraccountDirectory() {
+        return useraccountDirectory;
     }
 
-    public void setUserAccountDirectory(UserAccountDirectory UserAccountDirectory) {
-        this.UserAccountDirectory = UserAccountDirectory;
+    public void setuseraccountDirectory(useraccountDirectory useraccountDirectory) {
+        this.useraccountDirectory = useraccountDirectory;
     }
     private static Ecosystem business;
     public static Ecosystem getInstance(){
@@ -84,5 +84,7 @@ public class Ecosystem extends Organization {
         
         return true;
     }
+    
+    
     
 }
