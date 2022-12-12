@@ -61,7 +61,7 @@ public class AccountActivationPanel extends javax.swing.JPanel {
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(204, 255, 204));
+        setBackground(new java.awt.Color(255, 153, 0));
         setBorder(javax.swing.BorderFactory.createMatteBorder(3, 3, 3, 3, new java.awt.Color(0, 0, 0)));
         setMinimumSize(new java.awt.Dimension(700, 600));
         setPreferredSize(new java.awt.Dimension(700, 600));
@@ -95,9 +95,9 @@ public class AccountActivationPanel extends javax.swing.JPanel {
 
         jLabel4.setText("Enter Password");
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Business/Icon/2fa.jpg"))); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Business/Icon/istockphoto-1286858272-612x612.jpeg"))); // NOI18N
 
-        jLabel6.setFont(new java.awt.Font("Helvetica", 1, 18)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Lucida Grande", 1, 18)); // NOI18N
         jLabel6.setText("Activate Account");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);

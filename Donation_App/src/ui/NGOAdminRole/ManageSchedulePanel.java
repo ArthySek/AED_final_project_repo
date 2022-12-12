@@ -76,9 +76,9 @@ public class ManageSchedulePanel extends javax.swing.JPanel {
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jButton3 = new javax.swing.JButton();
+        datetf = new com.toedter.calendar.JDateChooser();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        datetf = new com.toedter.calendar.JDateChooser();
         jLabel7 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 204, 204));
@@ -165,13 +165,13 @@ public class ManageSchedulePanel extends javax.swing.JPanel {
             }
         });
         add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 530, 100, 50));
+        add(datetf, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 240, 150, -1));
 
         jLabel5.setFont(new java.awt.Font("Lucida Grande", 3, 36)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(153, 51, 255));
         jLabel5.setText("Schedule Donation ");
         add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 10, 370, 60));
         add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 60, -1, -1));
-        add(datetf, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 250, 150, -1));
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Business/Icon/food-donation.jpeg"))); // NOI18N
         jLabel7.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(0, 0, 0)));

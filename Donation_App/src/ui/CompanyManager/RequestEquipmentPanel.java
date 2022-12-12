@@ -117,7 +117,6 @@ public class RequestEquipmentPanel extends javax.swing.JPanel {
         jLabel2.setText("Order Quantity");
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 470, 100, -1));
 
-        jLabel1.setForeground(new java.awt.Color(204, 204, 255));
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Business/Icon/grad199.jpeg"))); // NOI18N
         jLabel1.setText("jLabel1");
         jLabel1.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(0, 0, 0)));

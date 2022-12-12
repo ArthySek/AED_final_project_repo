@@ -145,7 +145,7 @@ public class RegisterPanel extends javax.swing.JPanel {
         jButton1 = new javax.swing.JButton();
         jLabel18 = new javax.swing.JLabel();
 
-        setBackground(new java.awt.Color(204, 204, 255));
+        setBackground(new java.awt.Color(255, 102, 102));
         setBorder(javax.swing.BorderFactory.createMatteBorder(3, 3, 3, 3, new java.awt.Color(0, 0, 0)));
         setSize(new java.awt.Dimension(760, 680));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -258,7 +258,7 @@ public class RegisterPanel extends javax.swing.JPanel {
 
         add(venuepanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 410, 220, 200));
 
-        Logisticspanel.setBackground(new java.awt.Color(255, 204, 204));
+        Logisticspanel.setBackground(new java.awt.Color(255, 153, 0));
         Logisticspanel.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(0, 0, 0)));
 
         logisticscmbbx.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Travel", "Care Package" }));
@@ -323,7 +323,7 @@ public class RegisterPanel extends javax.swing.JPanel {
         });
         add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 629, 100, 50));
 
-        jLabel18.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
+        jLabel18.setFont(new java.awt.Font("Lucida Grande", 1, 14)); // NOI18N
         jLabel18.setText("REGISTER INFORMATION");
         add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 40, -1, -1));
     }// </editor-fold>//GEN-END:initComponents

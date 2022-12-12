@@ -39,6 +39,8 @@
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+
+
           <AbsoluteConstraints x="70" y="380" width="200" height="50"/>
         </Constraint>
       </Constraints>
@@ -53,6 +55,7 @@
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
           <AbsoluteConstraints x="390" y="380" width="200" height="50"/>
+
         </Constraint>
       </Constraints>
     </Component>
@@ -75,6 +78,7 @@
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+
           <Image iconType="3" name="/Business/Icon/Venue_Event.jpeg"/>
         </Property>
       </Properties>
@@ -97,6 +101,7 @@
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
           <AbsoluteConstraints x="240" y="30" width="-1" height="-1"/>
+
         </Constraint>
       </Constraints>
     </Component>
