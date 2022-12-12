@@ -78,6 +78,7 @@ public class ManageSchedulePanel extends javax.swing.JPanel {
         jButton3 = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
+        datetf = new com.toedter.calendar.JDateChooser();
         jLabel7 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 204, 204));
@@ -170,6 +171,7 @@ public class ManageSchedulePanel extends javax.swing.JPanel {
         jLabel5.setText("Schedule Donation ");
         add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 10, 370, 60));
         add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 60, -1, -1));
+        add(datetf, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 250, 150, -1));
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Business/Icon/food-donation.jpeg"))); // NOI18N
         jLabel7.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(0, 0, 0)));
@@ -243,6 +245,7 @@ public class ManageSchedulePanel extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private com.toedter.calendar.JDateChooser datetf;
     private javax.swing.JComboBox<String> donationnocmbbx;
     private javax.swing.JTextField donationtf;
     private javax.swing.JButton jButton1;
