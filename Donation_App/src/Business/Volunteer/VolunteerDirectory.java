@@ -16,10 +16,7 @@ import java.util.Map;
 
 /**
  *
-
  * @author arthy
-=======
-
  */
 public class VolunteerDirectory {
     ArrayList<Volunteer> volunteers;

@@ -10,7 +10,7 @@ import Business.Enterprise.EnterpriseDirectory;
 import Business.Organization.Organization;
 import Business.Role.Role;
 import Business.Role.SystemAdminRole;
-import Business.UserAccount.userAccountDirectory;
+import Business.UserAccount.UserAccountDirectory;
 import java.util.ArrayList;
 
 /**
@@ -20,10 +20,10 @@ import java.util.ArrayList;
 public class Ecosystem extends Organization {
     
     EmployeeDirectory employeeDirectory;
-    userAccountDirectory userAccountDirectory;
+    UserAccountDirectory userAccountDirectory;
     EnterpriseDirectory enterpriseDirectory;
 
-    public Ecosystem(EmployeeDirectory employeeDirectory, userAccountDirectory userAccountDirectory, EnterpriseDirectory enterpriseDirectory) 
+    public Ecosystem(EmployeeDirectory employeeDirectory, UserAccountDirectory userAccountDirectory, EnterpriseDirectory enterpriseDirectory) 
     {
         super();
         this.employeeDirectory = employeeDirectory;
@@ -31,7 +31,7 @@ public class Ecosystem extends Organization {
         this.enterpriseDirectory = enterpriseDirectory;
     }
 
-    public Ecosystem(EmployeeDirectory employeeDirectory, userAccountDirectory userAccountDirectory, EnterpriseDirectory enterpriseDirectory, String name) {
+    public Ecosystem(EmployeeDirectory employeeDirectory, UserAccountDirectory userAccountDirectory, EnterpriseDirectory enterpriseDirectory, String name) {
         super(name);
         this.employeeDirectory = employeeDirectory;
         this.userAccountDirectory = userAccountDirectory;
@@ -54,11 +54,11 @@ public class Ecosystem extends Organization {
         this.employeeDirectory = employeeDirectory;
     }
 
-    public userAccountDirectory getuserAccountDirectory() {
+    public UserAccountDirectory getUserAccountDirectory() {
         return userAccountDirectory;
     }
 
-    public void setuserAccountDirectory(userAccountDirectory userAccountDirectory) {
+    public void setUserAccountDirectory(UserAccountDirectory userAccountDirectory) {
         this.userAccountDirectory = userAccountDirectory;
     }
     private static Ecosystem business;
@@ -83,10 +83,6 @@ public class Ecosystem extends Organization {
     public boolean checkuserunique(String username){
         
         return true;
-        
-        
     }
-    
-    
     
 }

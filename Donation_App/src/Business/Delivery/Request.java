@@ -9,9 +9,7 @@ import java.util.Date;
 
 /**
  *
-
  * @author balajis
-
  */
 public class Request {
     String travelTransport;

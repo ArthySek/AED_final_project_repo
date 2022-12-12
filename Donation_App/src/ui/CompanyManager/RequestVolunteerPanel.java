@@ -66,6 +66,7 @@ public class RequestVolunteerPanel extends javax.swing.JPanel {
 
         designationcmbbx = new javax.swing.JComboBox<>();
         volunteercmbbx = new javax.swing.JComboBox<>();
+        datetf = new com.toedter.calendar.JDateChooser();
         timecmbbx = new javax.swing.JComboBox<>();
         jButton1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
@@ -88,6 +89,9 @@ public class RequestVolunteerPanel extends javax.swing.JPanel {
         add(designationcmbbx, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 330, 206, 36));
 
         add(volunteercmbbx, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 370, 206, -1));
+
+        datetf.setBackground(new java.awt.Color(255, 255, 255));
+        add(datetf, new org.netbeans.lib.awtextra.AbsoluteConstraints(306, 400, 190, -1));
 
         add(timecmbbx, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 440, 206, -1));
 
@@ -135,7 +139,7 @@ public class RequestVolunteerPanel extends javax.swing.JPanel {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
         CardLayout crdLyt = (CardLayout) container.getLayout();
-        crdLyt.show(container,"CompanyManager");
+        crdLyt.show(container,"companyManager");
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -219,6 +223,7 @@ public class RequestVolunteerPanel extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private com.toedter.calendar.JDateChooser datetf;
     private javax.swing.JComboBox<String> designationcmbbx;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;

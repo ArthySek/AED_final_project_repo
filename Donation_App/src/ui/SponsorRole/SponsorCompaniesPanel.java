@@ -25,10 +25,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
-
  * @author arthy
-=======
- 
  */
 public class SponsorCompaniesPanel extends javax.swing.JPanel {
 

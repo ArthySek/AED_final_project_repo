@@ -12,9 +12,7 @@ import java.util.HashMap;
 
 /**
  *
-
  * @author balajis
-
  */
 public class NGO {
     ArrayList<Company> CompanyofNGo = new ArrayList<Company>();
@@ -26,7 +24,7 @@ public class NGO {
     int noOfDonations;
     ArrayList<Donation> donations;
     boolean donationScheduled;
-    UserAccount UserAccount;
+    UserAccount userAccount;
     String scheduleType ;
     
 //    public int getNoofCompanies()
@@ -37,7 +35,7 @@ public class NGO {
     
     public NGO(String NGOName)
     {
-       // this.UserAccount = ua;
+       // this.userAccount = ua;
         this.NGOName = NGOName;
         this.scheduleType = "Not Selected";
 

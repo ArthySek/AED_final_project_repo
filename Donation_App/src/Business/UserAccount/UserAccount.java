@@ -12,10 +12,7 @@ import Business.Role.Role;
 
 /**
  *
-
  * @author arthy
-=======
- 
  */
 public class UserAccount {
     private String username;

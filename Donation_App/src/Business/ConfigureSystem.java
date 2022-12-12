@@ -14,14 +14,13 @@ import Business.Organization.OrganizationDirectory;
 import Business.Role.Role;
 import Business.Role.SystemAdminRole;
 import Business.UserAccount.UserAccount;
-import Business.UserAccount.userAccountDirectory;
+import Business.UserAccount.UserAccountDirectory;
 
 /**
  *
  * @author arthy
  */
 public class ConfigureSystem {
-    
     
     
         public static Ecosystem configure(){
@@ -40,14 +39,14 @@ public class ConfigureSystem {
         
         /*Sysadmin*/
         Employee employee = employeeDirectory.createEmployee("sysadmin");
-        userAccountDirectory userAccountDirectory = system.getuserAccountDirectory();
+        UserAccountDirectory userAccountDirectory = system.getUserAccountDirectory();
         if(userAccountDirectory == null)
         {
-            userAccountDirectory = new userAccountDirectory();
+            userAccountDirectory = new UserAccountDirectory();
         }
         UserAccount ua = userAccountDirectory.createUserAccount("sysadmin", "sysadmin", employee, new SystemAdminRole());
         system.setEmployeeDirectory(employeeDirectory);
-        system.setuserAccountDirectory(userAccountDirectory);
+        system.setUserAccountDirectory(userAccountDirectory);
         
         /*NGOEnterprise*/
 

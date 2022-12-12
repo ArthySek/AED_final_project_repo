@@ -24,15 +24,15 @@ public class Venue {
     String venueManager;
     int venueSeatingCapacity;
     String location;
-    UserAccount UserAccount;
+    UserAccount userAccount;
     HashMap<Donation, Date> donationRequests;
 
     public UserAccount getUserAccount() {
-        return UserAccount;
+        return userAccount;
     }
 
-    public void setUserAccount(UserAccount UserAccount) {
-        this.UserAccount = UserAccount;
+    public void setUserAccount(UserAccount userAccount) {
+        this.userAccount = userAccount;
     }
 
     public HashMap<Donation, Date> getDonationRequests() {
@@ -54,7 +54,7 @@ public class Venue {
 
     public Venue(UserAccount ua,String venueName,String venueLocation)
     {
-        this.UserAccount = ua;
+        this.userAccount = ua;
         this.venueName = venueName;
         this.location = venueLocation;
         donationRequests = new HashMap<Donation, Date>();

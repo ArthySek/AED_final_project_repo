@@ -9,10 +9,7 @@ import Business.UserAccount.UserAccount;
 
 /**
  *
- * 
  * @author arthy
-=======
- 
  */
 public class Logistic {
     String logisticManager;

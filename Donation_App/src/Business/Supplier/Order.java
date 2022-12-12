@@ -10,10 +10,7 @@ import java.util.Date;
 
 /**
  *
-
  * @author arthy
-=======
-
  */
 public class Order {
     int count = 100;
@@ -77,11 +74,11 @@ public class Order {
     }
 
     public String getCompanyName() {
-        return CompanyName;
+        return companyName;
     }
 
-    public void setCompanyName(String CompanyName) {
-        this.CompanyName = CompanyName;
+    public void setCompanyName(String companyName) {
+        this.companyName = companyName;
     }
 
     
@@ -118,7 +115,7 @@ public class Order {
     public void setLocation(String location) {
         this.location = location;
     }
-    public Order(String item,int quantity,String supplierName,String CompanyName)
+    public Order(String item,int quantity,String supplierName,String companyName)
     {
         this.orderId = count;
         count++;
@@ -126,7 +123,7 @@ public class Order {
         this.quantity = quantity;
         this.status = "Ordered";
         this.supplierName = supplierName;
-        this.CompanyName = CompanyName;
+        this.companyName = companyName;
         this.logistics = "TBD";
         this.review = "";
         this.location = "";
@@ -136,7 +133,7 @@ public class Order {
     String item;
     int quantity;
     String deliveryMan;
-    String CompanyName;
+    String companyName;
     String status;
     String review;
     String logistics;
@@ -159,6 +156,4 @@ public class Order {
     Date date;
     LocalDateTime localdatetime;
 
-    
-    
 }

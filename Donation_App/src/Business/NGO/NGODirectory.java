@@ -11,9 +11,7 @@ import java.util.ArrayList;
 
 /**
  *
-
  * @author balajis
-
  */
 public class NGODirectory {
     ArrayList<NGO> ngolist = new ArrayList<NGO>();
@@ -28,14 +26,14 @@ public class NGODirectory {
     
     
 
-    public boolean checkCompanyNameUnique(String CompanyName)
+    public boolean checkCompanyNameUnique(String companyName)
     {
         for(NGO s: ngolist)
         {
             ArrayList<Company> comp = s.getCompanyofNGo();
             for(Company t: comp)
             {
-                if(t.getCompanyName().equals(CompanyName))
+                if(t.getCompanyName().equals(companyName))
                     return true;
             }
         }

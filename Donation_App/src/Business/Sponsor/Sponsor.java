@@ -29,7 +29,7 @@ public class Sponsor {
     }
 
     public UserAccount getUserAccount() {
-        return UserAccount;
+        return userAccount;
     }
 
     public HashMap<Company, String> getOfferStatus() {
@@ -40,8 +40,8 @@ public class Sponsor {
         this.offerStatus = offerStatus;
     }
 
-    public void setUserAccount(UserAccount UserAccount) {
-        this.UserAccount = UserAccount;
+    public void setUserAccount(UserAccount userAccount) {
+        this.userAccount = userAccount;
     }
     int sponsorBudget;
     ArrayList<String> sponsoredCompanies = new ArrayList<String>();
@@ -53,11 +53,11 @@ public class Sponsor {
     public void setSponsoredCompanies(ArrayList<String> sponsoredCompanies) {
         this.sponsoredCompanies = sponsoredCompanies;
     }
-    UserAccount UserAccount;
+    UserAccount userAccount;
 
     public Sponsor(UserAccount ua,String sponsorName)
     {
-        this.UserAccount = ua;
+        this.userAccount = ua;
         this.sponsorName = sponsorName;
         sponsoredCompanies = new ArrayList<String>();
         sponsoredRequests = new HashMap<Company,Integer>();

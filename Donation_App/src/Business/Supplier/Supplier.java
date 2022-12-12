@@ -11,10 +11,7 @@ import java.util.HashMap;
 
 /**
  *
-
  * @author arthy
-=======
-
  */
 public class Supplier {
     

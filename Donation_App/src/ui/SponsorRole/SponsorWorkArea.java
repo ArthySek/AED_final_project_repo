@@ -15,10 +15,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * 
  * @author arthy
-=======
-
  */
 public class SponsorWorkArea extends javax.swing.JPanel {
 

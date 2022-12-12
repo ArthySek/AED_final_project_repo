@@ -9,7 +9,7 @@ import Business.DB4OUtil.DB4OUtil;
 import Business.Ecosystem;
 import Business.Enterprise.EnterpriseDirectory;
 import Business.UserAccount.UserAccount;
-import Business.UserAccount.userAccountDirectory;
+import Business.UserAccount.UserAccountDirectory;
 import java.awt.CardLayout;
 import java.awt.Image;
 import javax.swing.ImageIcon;
@@ -27,14 +27,14 @@ public class AccountActivationPanel extends javax.swing.JPanel {
      */
     JPanel container;
     Ecosystem ecosystem;
-    userAccountDirectory ud;
+    UserAccountDirectory ud;
     DB4OUtil db = DB4OUtil.getInstance();
     
     public AccountActivationPanel(JPanel container,Ecosystem ecosystem) {
         initComponents();
         this.container = container;
         this.ecosystem = ecosystem;
-        ud = ecosystem.getuserAccountDirectory();
+        ud = ecosystem.getUserAccountDirectory();
         jLabel5.setIcon(new ImageIcon(new ImageIcon("src/Business/Icon/istockphoto-1286858272-612x612.jpeg").getImage().getScaledInstance(525, 340, Image.SCALE_DEFAULT)));
 
     }

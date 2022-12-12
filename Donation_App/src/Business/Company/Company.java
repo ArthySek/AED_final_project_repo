@@ -11,16 +11,12 @@ import java.util.ArrayList;
 
 /**
  *
-
-
-=======
  * @author balajis
-
  */
 public class Company {
     public String CompanyName;
     String CompanyManager;
-    UserAccount UserAccount;
+    UserAccount userAccount;
     NGO ngo;
     String CompanyStatus;
 
@@ -30,7 +26,7 @@ public class Company {
     
     public Company(UserAccount ua,String CompanyName)
     {
-        this.UserAccount = ua;
+        this.userAccount = ua;
         this.CompanyName = CompanyName;
         this.CompanyStatus = "Requested";
        
@@ -45,11 +41,11 @@ public class Company {
     }
 
     public UserAccount getUserAccount() {
-        return UserAccount;
+        return userAccount;
     }
 
-    public void setUserAccount(UserAccount UserAccount) {
-        this.UserAccount = UserAccount;
+    public void setUserAccount(UserAccount userAccount) {
+        this.userAccount = userAccount;
     }
 
     public String getCompanyStatus() {
@@ -122,7 +118,5 @@ public class Company {
     {
       this.budget = this.budget + budget;
     }
-    
-    
     
 }

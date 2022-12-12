@@ -139,15 +139,15 @@ public class ViewVolunteerAvailability extends javax.swing.JPanel {
                 SimpleDateFormat sdf1 = new SimpleDateFormat("HH:mm");
                 for(Company c : v.getCompanyMapping().keySet())
                 {
-                    String CompanyManager = c.getCompanyManager();
-                    String CompanyName = c.getCompanyName();
+                    String companyManager = c.getCompanyManager();
+                    String companyName = c.getCompanyName();
                         for(Date dt :v.getCompanyMapping().get(c).keySet())
                         {
                             String date = sdf.format(dt);
                             for(Date ti : v.getCompanyMapping().get(c).get(dt))
                             {
                                 String time = sdf1.format(ti);
-                                String[] row ={CompanyManager,CompanyName,date,time};
+                                String[] row ={companyManager,companyName,date,time};
                                 df.addRow(row);
                             }
                                   
