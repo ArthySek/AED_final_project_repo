@@ -258,7 +258,7 @@ public class RegisterPanel extends javax.swing.JPanel {
 
         add(venuepanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 410, 220, 200));
 
-        Logisticspanel.setBackground(new java.awt.Color(255, 153, 0));
+        Logisticspanel.setBackground(new java.awt.Color(255, 204, 204));
         Logisticspanel.setBorder(javax.swing.BorderFactory.createMatteBorder(2, 2, 2, 2, new java.awt.Color(0, 0, 0)));
 
         logisticscmbbx.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Travel", "Care Package" }));
