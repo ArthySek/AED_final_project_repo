@@ -61,7 +61,6 @@ public class VolunteerAvailabilityPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jCalendar1 = new com.toedter.calendar.JCalendar();
         jButton1 = new javax.swing.JButton();
         timecmbbx = new javax.swing.JComboBox<>();
         jButton2 = new javax.swing.JButton();
@@ -70,7 +69,6 @@ public class VolunteerAvailabilityPanel extends javax.swing.JPanel {
         jButton3 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
-        datetf = new com.toedter.calendar.JDateChooser();
 
         setBackground(new java.awt.Color(255, 204, 204));
         setBorder(javax.swing.BorderFactory.createMatteBorder(3, 3, 3, 3, new java.awt.Color(0, 0, 0)));
@@ -130,7 +128,6 @@ public class VolunteerAvailabilityPanel extends javax.swing.JPanel {
         );
 
         add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 30, 320, 250));
-        add(datetf, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 90, 160, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -189,11 +186,9 @@ public class VolunteerAvailabilityPanel extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private com.toedter.calendar.JDateChooser datetf;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
-    private com.toedter.calendar.JCalendar jCalendar1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

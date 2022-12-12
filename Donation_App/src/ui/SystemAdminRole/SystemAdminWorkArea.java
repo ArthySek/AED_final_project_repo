@@ -46,13 +46,12 @@ public class SystemAdminWorkArea extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-
         jLabel1 = new javax.swing.JLabel();
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
 
-        setBackground(new java.awt.Color(0, 204, 255));
+        setBackground(new java.awt.Color(255, 102, 102));
         setBorder(javax.swing.BorderFactory.createMatteBorder(3, 3, 3, 3, new java.awt.Color(0, 0, 0)));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -76,9 +75,7 @@ public class SystemAdminWorkArea extends javax.swing.JPanel {
         });
         add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 320, -1, 50));
 
-        jButton6.setBackground(new java.awt.Color(204, 204, 204));
         jButton6.setFont(new java.awt.Font("Lucida Grande", 1, 14)); // NOI18N
-        jButton6.setForeground(new java.awt.Color(255, 0, 51));
         jButton6.setText("Logout");
         jButton6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -120,6 +117,5 @@ public class SystemAdminWorkArea extends javax.swing.JPanel {
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JLabel jLabel1;
-
     // End of variables declaration//GEN-END:variables
 }
