@@ -10,8 +10,17 @@ The location is then set according to the generated schedule. Venue manager acce
 
 Company manager accepts all of this & finally the donation takes place successfully. Analytics team can visualize under a particular location which company has contributed the most.
 
-Here are the 4 different enterprises - NGO Unit, Company Management Unit, Service Unit, Donation Unit
+Here are the 4 different enterprises - 
 
-The organizations include - Company Org, NGO Management Org, Donation Scheduling Dept, Volunteer Request Dept, Equipment request Dept, Supplier Managing Dept, Sponsor Delegating Dept, Venue Management Dept, Food sponsor Dept, Equipment Supplier Dept, Stock Managing Dept
+NGO Unit, 
+Company Management Unit, 
+Service Unit, 
+Donation Unit
+
+The organizations include - 
+Company Org, NGO Management Org, Donation Scheduling Dept, 
+Volunteer Request Dept, Equipment request Dept, Supplier Managing Dept, 
+Sponsor Delegating Dept, Venue Management Dept, Food sponsor Dept, 
+Equipment Supplier Dept, Stock Managing Dept
 
 Each organization has a specific role and work request that goes on between them.
